@@ -2,6 +2,7 @@ import React from 'react'
 import "./Home.scss"
 import { Link } from 'react-router-dom'
 import { Button } from '../../Components'
+import Carousel from '../../Components/Carousel/Carousel'
 
 const Home = () => {
   return (
