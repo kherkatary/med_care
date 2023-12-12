@@ -6,12 +6,18 @@
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     background-color: #172538;
     padding: 5%;
+    height: fit-content;
 
     .containerStyles{
 
         color: white;
         font-family: 'Poppins', sans-serif;
         padding: 3rem 1rem;
+        @media only screen and (max-width: 600px) {
+            padding: 1rem 1rem;
+
+        }
+            
 
     }
 
