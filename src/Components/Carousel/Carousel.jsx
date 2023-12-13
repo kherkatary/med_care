@@ -12,7 +12,7 @@ const Carousel =()=>{
   }
 
   useEffect(()=>{
-   const interval = setInterval(()=>{CarouselInfinteScroll()},2000)
+   const interval = setInterval(()=>{CarouselInfinteScroll()},3500)
 
    return ()=> clearInterval(interval)})
 
