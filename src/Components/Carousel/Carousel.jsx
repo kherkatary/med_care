@@ -1,24 +1,29 @@
 import React, { useEffect, useState } from 'react'
 import './Carousel.scss'
+import Img1 from './Images/carousel-doctor.jpg'
 
 
 const Carousel = () => {
    const data = [
       {
-         img: `/background-carousel.jpg`,
+         id: 1,
+         src: Img1,
          name: `INDRA`
 
       },
       {
-         img: `/doctor-carousel.jpg`,
+         id: 2,
+         src: Img1,
          name: `HHH`
       },
       {
-         img: `/background-carousel.jpg`,
+         id: 3,
+         src: Img1,
          name: `AAASDFGH`
       },
       {
-         img: `/background-carousel.jpg`,
+         id: 4,
+         src: Img1,
          name: `dbfj`
       }
       // "1", "2","3","4","5"
@@ -49,7 +54,7 @@ const Carousel = () => {
             key={index}>{item}</h1> */}
                   <div className='button-div'>
 
-                     <h1>We Provide top Medical Services
+                     <h1>We Provide top<br /> Medical Services
                      </h1>
                      <h2>More than 30 professionals</h2>
                      <div className="all-button">
@@ -62,7 +67,8 @@ const Carousel = () => {
                   <div className='carousel-item'
                      style={{ transform: `translate(-${currIdx * 100}%)` }}
                      key={index}>
-                     <h1>{item.name}</h1>
+                     {/* <h1>{item.name}</h1> */}
+                     <img key={item.id} src={item.src}></img>
                   </div>
 
                </>)
