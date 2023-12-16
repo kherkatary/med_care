@@ -31,7 +31,7 @@ header{
   font-size: 20px;
   display: flex;
   align-items: center;
-  padding: 0 2% 0 5%;
+  padding: 0 2% 0 7%;
 
   img{
     height: 57px;
@@ -96,5 +96,13 @@ header{
   display: block;
   }
   .navbar-button{ margin-right: 15px;}
+
+  header{
+    img{
+      transform: ease-in 1s;
+      height: 45px;
+      width: 120pxpx;
+    }
+  }
   
 }

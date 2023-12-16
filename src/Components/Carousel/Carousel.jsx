@@ -48,15 +48,11 @@ const Carousel = () => {
             return (
                <>
 
-
-                  {/* <h1 className='carousel-item'
-            style={{transform: `translate(-${currIdx * 100}%)`}}
-            key={index}>{item}</h1> */}
                   <div className='button-div'>
-
-                     <h1>We Provide top<br /> Medical Services
-                     </h1>
-                     <h2>More than 30 professionals</h2>
+                     <div className="description">
+                     <p className='heading-name'>We Provide top<br /> Medical Services </p>
+                     <p className='heading-description'>More than 30 professionals</p>
+                     </div>
                      <div className="all-button">
                         <button className='appointment'>Make an Appointment</button>
                         <button className='read-more'>Read More</button>
