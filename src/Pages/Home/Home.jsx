@@ -8,7 +8,7 @@ import Carousel from '../../Components/Carousel/Carousel'
 const Home = () => {
   return (
     <div className='home'>
-    <Navbar />
+
     <Carousel />
     <div>This is Home Page</div>
     <Link to="/login"> <Button title="to Login Page"/></Link>
