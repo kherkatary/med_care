@@ -82,13 +82,16 @@ header{
   li{
     padding-top: 10px;
     font-size: 18px;
+    cursor: pointer;
   }  
 }
+
 
 @media screen and (max-width: 900px) {
   .max-width-links {
     display: none;
   }
+  
   .navbar-button, .show-nav-links{
   display: block;
   }
