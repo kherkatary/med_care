@@ -1,33 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import './Carousel.scss'
 import Img1 from './Images/carousel-doctor.jpg'
+import data from '../..navbardata.json'
 
 
 const Carousel = () => {
-   const data = [
-      {
-         id: 1,
-         src: Img1,
-         name: `INDRA`
-
-      },
-      {
-         id: 2,
-         src: Img1,
-         name: `HHH`
-      },
-      {
-         id: 3,
-         src: Img1,
-         name: `AAASDFGH`
-      },
-      {
-         id: 4,
-         src: Img1,
-         name: `dbfj`
-      }
-      // "1", "2","3","4","5"
-   ]
+  
    const [currIdx, setCurrIdx] = useState(0)
    const CarouselInfinteScroll = () => {
       if (currIdx == data.length - 1) {
