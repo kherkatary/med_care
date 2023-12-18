@@ -1,0 +1,32 @@
+*{
+   margin: 0;
+   box-sizing: border-box;
+}
+.overall-div{
+   height: 200px;
+   padding: 3.6% 0 0 10%;
+   font-family: 'Poppins', sans-serif;
+   font-weight: bolder;
+   background-image: url('../../../public/background-carousel.jpg');
+   background-position: 0;
+   background-size:cover; 
+   background-repeat: no-repeat; 
+   transition: 0.8s ease;
+
+   
+   .heading{
+      font-weight: 15px;
+      font-size: 2rem;
+      letter-spacing: 3px;
+   }
+   .small-heading{
+      font-size: 1.1rem;
+   }
+}
+@media screen and (max-width: 900px) {
+   .overall-div{
+   height: 115px;
+   transition: 0.8s ease;
+   }
+   
+ }
