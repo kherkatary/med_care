@@ -3,7 +3,7 @@
    box-sizing: border-box;
 }
 .overall-div{
-   height: 200px;
+   height: 12.5rem;
    padding: 3.6% 0 0 10%;
    font-family: 'Poppins', sans-serif;
    font-weight: bolder;
@@ -15,7 +15,7 @@
 
    
    .heading{
-      font-weight: 15px;
+      font-weight: 0.938rem;
       font-size: 2rem;
       letter-spacing: 3px;
    }
@@ -25,7 +25,7 @@
 }
 @media screen and (max-width: 900px) {
    .overall-div{
-   height: 115px;
+   height: 7.188rem;
    transition: 0.8s ease;
    }
    
