@@ -5,23 +5,12 @@ import Img1 from './Images/carousel-doctor.jpg'
 
 const Carousel = () => {
    const data = [
-      {
-         id: 1,
-         src: Img1,
-      },
-      {
-         id: 2,
-         src: Img1,
-      },
-      {
-         id: 3,
-         src: Img1,
-      },
-      {
-         id: 4,
-         src: Img1,
-      }
+      { id: 1, src: Img1, },
+      { id: 2, src: Img1, },
+      { id: 3, src: Img1, },
+      { id: 4, src: Img1, }
    ]
+
    const [currIdx, setCurrIdx] = useState(0)
    const CarouselInfinteScroll = () => {
       if (currIdx == data.length - 1) {
@@ -45,7 +34,7 @@ const Carousel = () => {
                   <div className='button-div'>
                      <div className="description">
                      <p className='heading-name'>We Provide top<br /> Medical Services </p>
-                     <p className='heading-description'>More than 30 professionals</p>
+                     <p className='Heading-Description'>More than 30 professionals</p>
                      </div>
                      <div className="all-button">
                         <button className='appointment'>Make an Appointment</button>
