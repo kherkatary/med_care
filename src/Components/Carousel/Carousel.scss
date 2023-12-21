@@ -1,4 +1,5 @@
 *{
+   margin: 0;
    box-sizing: border-box;
 }
 .carousel-container{
@@ -41,11 +42,12 @@
             font-size: 65px;
             line-height: 1.2;
             letter-spacing: 4px;
+            overflow:inherit;
       
          }
-         .heading-description{
+         .Heading-Description{
             font-size: 25px;
-            margin-top: -30px;
+            // margin-top: 30px;
          }
       }
       
