@@ -8,8 +8,8 @@ const NewsPreview = ({image,heading,date}) => {
         <img className='newsImage' src={image} alt="image one" />
         </div>
         <div className='newsHeading'>
-        <p>{heading}</p>
-        <span>{date}</span>
+        <p>Phasellus at nunc orci. Donec ipsum</p>
+        <span>Dec 02, 2022</span>
         </div>
     </div>
   )
