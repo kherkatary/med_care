@@ -1,10 +1,20 @@
-import React from 'react'
 import './contactUsFooter.scss'
 import { Icon } from '@iconify/react';
+import { useState, useEffect } from 'react';
 
-const ContactUsFooter = () => {
+const ContactUsFooter = ({bgColor}) => {
+    useEffect(()=>{
+        change()
+    })
+    const [color, setColor]= useState("none");
+    const change=()=>{
+
+        if(bgColor!=null){
+            setColor(bgColor)
+        }
+    }
   return (
-    <div className="fourth containerStyles">
+    <div style={{backgroundColor:color}}  className="fourth">
         <h3>CONTACT US</h3>
         <div className="contact">
         <div className="contactMethod">

@@ -43,12 +43,9 @@ const Footer = () => {
 
       </div>
 
-      <div>
-        <ContactUsFooter/>
+      <div className="containerStyles">
+        <ContactUsFooter bgColor="none"/>
       </div>
-      
-
-
     </div>
   )
 }
