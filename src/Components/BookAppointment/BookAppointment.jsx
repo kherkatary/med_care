@@ -27,11 +27,7 @@ const BookAppointment=()=>{
                     <input type="date" placeholder="mm/dd/yyyy" className="user-input"/>
                 </div>
                 <span><button className="btn">Make an Appointment</button></span>
-               
 
-            </div>
-            <div className="doctor-image">
-                <img src="./doctorG.webp" alt="" />
             </div>
         </div>
     )
