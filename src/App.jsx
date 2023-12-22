@@ -1,5 +1,5 @@
 
-import { Footer, Navbar } from './Components'
+import { Footer, Navbar ,Testimonial} from './Components'
 import { Home, Login } from './Pages'
 import { Route, Routes } from 'react-router-dom'
 
@@ -12,6 +12,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/login' element={<Login/>}/>
       </Routes>
+      <Testimonial/>
       <Footer />
     </>
   )
