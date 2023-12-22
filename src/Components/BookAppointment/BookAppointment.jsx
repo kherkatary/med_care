@@ -30,6 +30,9 @@ const BookAppointment=()=>{
                
 
             </div>
+            <div className="doctor-image">
+                <img src="./doctorG.webp" alt="" />
+            </div>
         </div>
     )
 }
