@@ -1,21 +1,32 @@
-import { TileDesc } from '../../Components'
+import { AboutInfo, Quote, TileDesc } from '../../Components'
+import data from "../../assets/About.json"
 import './About.scss'
 
 const About = () => {
   return (
     <div>
-      <TileDesc name="About Us"/>
-        <div style={{backgroundImage: `url("https://img.freepik.com/free-photo/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background_1258-28311.jpg?w=1800&t=st=1703188160~exp=1703188760~hmac=c40d0fcdda0d443539490d44a10b6cc9892c8870bcbb6e411a82f19e1a990f31")`}}
-         className="quote_div">
-            <div className="quote">
-            <h1>We have the best doctors in the country</h1>
-            <p>Phasellus at nunc orcidonec ipsum metus, pharetra quis nunc sit amet</p>
-            </div>
-            <div className="aptBtn centerUsingFlex">
-                <button>Make an Appointment</button>
-            </div>
-        </div>
+      <TileDesc name="About Us" />
+      <AboutInfo
+        heading={data?.aboutInfo?.heading}
+        content={data?.aboutInfo?.content}
+        imageLink={data?.aboutInfo?.imageLink}
+        icon_name={data?.aboutInfo?.iconName}
+      />
 
+      <Quote
+        heading={data?.quote?.heading}
+        subHeading={data?.quote?.subHeading}
+        buttonTitle={data?.quote?.buttonTitile}
+        backgroundImage={data?.quote?.backgroundImage}
+      />
+
+      <AboutInfo
+        heading={data?.aboutInfo2?.heading}
+        content={data?.aboutInfo2?.content}
+        imageLink={data?.aboutInfo2?.imageLink}
+        icon_name={data?.aboutInfo2?.iconName}
+      />
+      
     </div>
   )
 }
