@@ -1,0 +1,45 @@
+.body{
+    background-color: #1063cf;
+    margin: auto;
+    padding: 25px;
+    color: white;
+    width: 80%;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+}
+.body h2{
+    margin: 10px;
+    padding: 10px;
+}
+.input-boxes{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    margin: 10px;
+    padding: 10px;
+    row-gap: 30px;
+    column-gap: 40px;
+}
+.user-input {
+    background-color: #2f88fd;
+    height: 40px;
+}
+::placeholder{
+    color: white;
+}
+input, select, textarea{
+    color: #ffffff;
+    font-weight: 500;
+}
+.btn{
+    margin: 10px;
+    padding: 10px; 
+    background-color: #1063cf;
+    color: #ffffff;
+    border: 3px solid white;
+    margin-left: 20px;
+}
+@media only screen and (max-width:768px){
+    .input-boxes{
+        grid-template-columns: 80%;
+    }
+}

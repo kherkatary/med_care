@@ -1,5 +1,5 @@
 
-import { Footer, Navbar ,Testimonial} from './Components'
+import { Footer, Navbar ,Testimonial,BookAppointment} from './Components'
 import { Home, Login } from './Pages'
 import { Route, Routes } from 'react-router-dom'
 
@@ -13,6 +13,7 @@ function App() {
         <Route path='/login' element={<Login/>}/>
       </Routes>
       <Testimonial/>
+      <BookAppointment/>
       <Footer />
     </>
   )
