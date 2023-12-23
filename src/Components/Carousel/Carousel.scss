@@ -1,0 +1,119 @@
+*{
+   margin: 0;
+   box-sizing: border-box;
+}
+.carousel-container{
+   background:#ffffff;
+   display:flex;
+   position: relative;
+   overflow: hidden;
+}
+
+.button-div{
+   
+   @keyframes bounce {
+      from { 
+         opacity: 0.2;
+         transform: translate3d(0,200px,0)
+      }
+      to { 
+         opacity: 1;
+         transform: translate3d(0,0,0)}
+      }
+      animation: bounce 2s;
+      animation-direction: alternate;
+      animation-iteration-count: 1;
+      
+      position: absolute;
+      color: rgb(0, 0, 0);
+      text-shadow: rgba(250,250,250,0.9) 0px 0px 51px;
+      z-index: 1;
+      height: 650px;
+      justify-content: center;
+      transform: cubic-bezier(0.075, 0.82, 0.165, 1);
+      // background-color: rgb(117, 117, 117);
+      background-color: transparent;
+      padding: 200px 0 0 7%;
+      
+      .description{
+         font-weight: bold;
+
+         .heading-name{
+            font-size: 65px;
+            line-height: 1.2;
+            letter-spacing: 4px;
+            overflow:inherit;
+      
+         }
+         .Heading-Description{
+            font-size: 25px;
+            // margin-top: 30px;
+         }
+      }
+      
+      
+      button{
+         margin: 5px;
+         padding: 2px 0 2px 0;
+         height: auto;
+         font-size: 18px;
+         border: 2px white;
+         cursor: pointer;
+      }
+      
+      .all-button{
+         display: flex;
+      }
+      .appointment{
+         width: 200px;
+         background-color: transparent;
+         color: white;
+         border: 2px solid white;
+         
+      }
+      .read-more{
+         width: 130px;
+         background-color: #4d4dff;
+         color: white;
+      }
+   }
+
+   .carousel-item{
+      height: 650px;
+      min-width: 100%;
+      width: 100%;
+      display: flex;      
+      justify-content: center;
+      transition: 2s cubic-bezier(0.39, 0.575, 0.565, 1);
+      
+      img{
+         object-fit: cover;
+         background-repeat: no-repeat;
+         height: 100%;
+         width: 100%;
+      }
+   }
+   
+
+   @media screen and (max-width: 900px) {
+      .carousel-item, .button-div{
+         height: 500px;
+         transition: ease-in-out 1s;
+      }  
+      .button-div{
+         padding: 180px 0 0 7%;
+         .description{
+   
+            .heading-name{
+               font-size: 50px;
+               line-height: 1.1;
+               letter-spacing: 4px;
+         
+            }
+            .heading-description{
+               font-size: 25px;
+               margin-top: -40px;
+            }
+         }
+        }
+    }

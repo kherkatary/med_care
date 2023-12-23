@@ -1,8 +1,109 @@
-.box{
-    border: 0.1rem solid black;
-    background-color: rgb(245, 226, 226);
-    min-height: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+
+// Overall global design of the Navbar: Responsive Design
+* {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Titillium Web', sans-serif;
+
+  a{
+    margin: 0 2rem 0 0;
+    text-decoration: none;
+    color: black;
+  }
+    .home-menu{
+    color: rgb(0, 128, 255);
+  }
+   a:hover{
+     color: rgb(1, 149, 255);
+  }
+  li{
+    list-style: none;
+  }
+}
+
+
+// Header Section Max-width View of the screen
+header{  
+  background-color: rgb(255, 255, 255);
+  height: 70px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0 2% 0 7%;
+  box-shadow: 0px 4px 15px -3px rgba(0,0,0,0.1);
+
+  img{
+    height: 57px;
+    width: 160px;
+  }
+  .nav-links{
+    margin-left: auto;
+     li{
+      
+      align-items: center;
+      display: inline;
+    }
+  }
+  
+}
+
+.navbar-button{
+  display: none;
+  height: 40px;
+  width: 70px;
+  background-color: white;
+  border-radius: 5px;
+  border: 2px solid black;
+  cursor: pointer;
+  
+}
+
+// Min-width view of the screen
+.show-nav-links{
+  width: 100%;
+  text-align: center;
+  display: none;
+  // background-color: rgb(186, 186, 186);
+  position: absolute;
+  top: 54px;
+  z-index: 2;
+  
+  .div-links{
+    background-color: rgb(255, 255, 255);
+    width: 95%;
+    margin:  auto;
+    border-radius: 5px;
+  }
+  
+  ul{
+    padding-bottom: 10px;
+  }
+  li{
+    padding-top: 10px;
+    font-size: 18px;
+    cursor: pointer;
+  }  
+}
+
+
+@media screen and (max-width: 900px) {
+  .max-width-links {
+    display: none;
+  }
+  
+  .navbar-button, .show-nav-links{
+  display: block;
+  }
+  .navbar-button{ margin-right: 15px;}
+
+  header{
+    img{
+      transform: ease-in 1s;
+      height: 45px;
+      width: 120pxpx;
+    }
+  }
+  
 }
