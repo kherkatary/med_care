@@ -2,6 +2,7 @@ import React from 'react'
 import './News.scss'
 import { Link } from 'react-router-dom'
 import data from "../../assets/data.json"
+import NewsData from '../../assets/NewsData.json'
 import TileDescriptor from '../../Components/TileDesc/TileDesc'
 import NewsDesc from '../../Components/NewsDesc/NewsDesc'
 import NewsPreview from '../../Components/footerComponents/NewsPreview'
@@ -13,45 +14,14 @@ const News = () => {
       <div className="all-news-contents">
 
         <div className="all-left-portion">
+        {NewsData?.map(newsdata => (
+            <NewsDesc key={newsdata.id} heading={newsdata.heading} date={newsdata.date}
+             author={newsdata.author} speciality={newsdata.author} commnets={newsdata.comments}
+             details={newsdata.details} />
 
-          <NewsDesc
-            heading='Let us introduce you our new team'
-            date='29 Nov, 2023'
-            author='Loredana Papp'
-            speciality='Medicine Breacktrough'
-            comments='3'
-            details='Phasellus at nunc orci. Donec ipsum metus, pharetra quis nunc sit amet, maximus vehicula nibh. Praesent pulvinar porta elit, a commodo erat.
-        Phasellus at nunc orci. Donec ipsum metus, pharetra quis nunc sit amet, maximus vehicula nibh. Praesent pulvinar porta elit, a commodo erat.Phasellus 
-        at nunc orci. Donec ipsum metus, pharetra quis nunc sit amet, maximus vehicula nibh. Praesent pulvinar porta elit, a commodo erat. Phasellus at nunc 
-        orci. Donec ipsum metus, pharetra quis nunc sit amet, maximus vehicula nibh. Praesent pulvinar porta elit, a commodo erat.Phasellus at nunc orci. Donec
-        ipsum metus, pharetra quis nunc sit amet, maximus vehicula nibh. Praesent pulvinar porta elit, a commodo erat. Phasellus at nunc orci. Donec ipsum metus, 
-        pharetra quis nunc sit amet, maximus vehicula nibh. Praesent pulvinar porta elit, a commodo erat.Phasellus at nunc orci. Donec ipsum metus, pharetra quis
-        nunc sit amet, maximus vehicula nibh. Praesent pulvinar porta elit, a commodo erat. Phasellus at nunc orci. Donec ipsum metus, pharetra quis nunc sit amet,
-        maximus vehicula nibh. Praesent pulvinar porta elit, a commodo erat.Phasellus at nunc orci. Donec ipsum metus, pharetra quis nunc sit amet, maximus vehicul
-        a nibh. Praesent pulvinar porta elit, a commodo erat. Phasellus at nunc orci. Donec ipsum metus, pharetra quis nunc sit amet, maximus vehicula nibh. Praesent
-        pulvinar porta elit, a commodo erat.Phasellus at nunc orci. Donec ipsum metus, pharetra quis nunc sit amet, maximus vehicula nibh. Praesent pulvinar porta e
-        lit, a commodo erat. Phasellus at nunc orci. Donec ipsum metus, pharetra quis nunc sit amet, maximus vehicula nibh. Praesent pulvinar porta elit, a commodo erat.'
-          />
-          <NewsDesc
-            heading='New plastic surgery department from january ‘18'
-            date='29 Jan, 2023'
-            author='Loredana Papp'
-            speciality='Medicine Breacktrough'
-            comments='3'
-            details='Phasellus at nunc orci. Donec ipsum metus, pharetra quis nunc sit amet, maximus vehicula nibh. Praesent pulvinar porta elit, a commodo erat.
-        it, a commodo erat. Phasellus at nunc orci. Donec ipsum metus, pharetra quis nunc sit amet, maximus vehicula nibh. Praesent pulvinar porta elit, a commodo erat.'
-          />
+          ))}
 
-          <NewsDesc
-            heading='Let us introduce you our new team'
-            date='29 Nov, 2023'
-            author='Loredana Papp'
-            speciality='Medicine Breacktrough'
-            comments='3'
-            details='Phasellus at nunc orci. Donec ipsum metus, pharetra quis nunc sit amet, maximus vehicula nibh. Praesent pulvinar porta elit, a commodo erat.
-        pulvinar porta elit, a commodo erat.Phasellus at nunc orci. Donec ipsum metus, pharetra quis nunc sit amet, maximus vehicula nibh. Praesent pulvinar porta e
-        lit, a commodo erat. Phasellus at nunc orci. Donec ipsum metus, pharetra quis nunc sit amet, maximus vehicula nibh. Praesent pulvinar porta elit, a commodo erat.'
-          />
+
 
          <div className="pages-number">
           <div className='number'>1</div>
