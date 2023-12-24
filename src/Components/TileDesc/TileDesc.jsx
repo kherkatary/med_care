@@ -1,7 +1,7 @@
 import React from 'react'
 import './TileDesc.scss'
 
-const TileDesc=(props)=> {
+function TileDesc(props) {
   return (
    <>
     <div className='overall-div'>
