@@ -6,7 +6,7 @@ const TileDesc=(props)=> {
    <>
     <div className='overall-div'>
       <p className='heading'>{props.name}</p>
-      <p className='small-heading'>HOME | {props.name}</p>
+      <p className='small-heading'>HOME | {props.description}</p>
     </div>
    </>
   )

@@ -1,7 +1,7 @@
 import React,{ useState, Component } from "react";
 import "./Navbar.scss"
 import { IoMenu } from "react-icons/io5";
-
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -15,12 +15,12 @@ const Navbar = () => {
 
          <nav className="nav-links">
             <ul className="max-width-links">
-               <li><a href="/" className="home-menu">HOME</a></li>
-               <li><a href="/pages">PAGES</a></li>
-               <li><a href="/about">ABOUT US</a></li>
-               <li><a href="/services">SERVICES</a></li>
-               <li><a href="/news">NEWS</a></li>
-               <li><a href="/contact">CONTACT</a></li>
+               <li><Link to="/" className="home-menu">HOME</Link></li>
+               <li><Link to="/about">ABOUT US</Link></li>
+               <li><Link to="/#">SERVICES</Link></li>
+               <li> <Link to="/news">NEWS</Link></li>
+               <li><Link to="/contact">CONTACT</Link></li>
+               <li><Link to="/login">LOG IN</Link></li>
 
             </ul>
          </nav>
@@ -32,12 +32,12 @@ const Navbar = () => {
             visible &&  <div className="div-links">
             
                <ul className="min-width-links">
-                  <li><a href="/" className="home-menu">HOME</a></li>
-                  <li><a href="/pages">PAGES</a></li>
-                  <li><a href="/about">ABOUT US</a></li>
-                  <li><a href="/services">SERVICES</a></li>
-                  <li><a href="/news">NEWS</a></li>
-                  <li><a href="/contact">CONTACT</a></li>
+               <li><Link to="/" className="home-menu">HOME</Link></li>
+               <li><Link to="/about">ABOUT US</Link></li>
+               <li><Link to="/#">SERVICES</Link></li>
+               <li> <Link to="/news">NEWS</Link></li>
+               <li><Link to="/contact">CONTACT</Link></li>
+               <li><Link to="/login">LOG IN</Link></li>
 
                </ul>
             </div> 
