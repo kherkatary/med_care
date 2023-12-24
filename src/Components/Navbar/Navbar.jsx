@@ -17,7 +17,7 @@ const Navbar = () => {
             <ul className="max-width-links">
                <li><Link to="/" className="home-menu">HOME</Link></li>
                <li><Link to="/about">ABOUT US</Link></li>
-               <li><Link to="/#">SERVICES</Link></li>
+               <li><Link to="/services">SERVICES</Link></li>
                <li> <Link to="/news">NEWS</Link></li>
                <li><Link to="/contact">CONTACT</Link></li>
                <li><Link to="/login">LOG IN</Link></li>
