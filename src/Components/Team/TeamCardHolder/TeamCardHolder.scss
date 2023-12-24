@@ -1,0 +1,44 @@
+.holderContainer {
+    .holderHeading {
+        height: 20vh;
+
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+
+        .headingTitle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            height: 100%;
+            width: 100%;
+            background-color: rgba(74, 81, 161, 0.5);
+            color: white;
+        }
+    }
+
+    .holder{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        padding: 5rem 2rem;
+        @media screen and ( max-width:600px) {
+                display: none;
+        }
+    }
+}
+
+.cardCarousal{
+   
+    #controller{
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid black;
+        padding: 0 0.5rem;
+    }
+
+    @media screen and ( min-width:600px) {
+        display: none;
+}
+}

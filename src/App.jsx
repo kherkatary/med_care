@@ -1,6 +1,6 @@
 
 import { Footer, Navbar } from './Components'
-import { About, ErrorPage, Home, Login, News, Contact} from './Pages/index'
+import { About, ErrorPage, Home, Login, News, Contact, Teams} from './Pages/index'
 import { Routes, Route} from 'react-router-dom'
 
 
@@ -21,6 +21,7 @@ function App() {
           <Route path='/contact' element={<Contact/>}/>
         
         <Route path='*' element={<ErrorPage/>}/>
+        <Route path='/teams' element={<Teams/>}/>
       </Routes>
       <Footer />
     </>
