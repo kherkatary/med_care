@@ -5,7 +5,7 @@ import './About.scss'
 const About = () => {
   return (
     <div>
-      <TileDesc name="ABOUT US" />
+      <TileDesc name="About Us" />
       <AboutInfo
         heading={data?.aboutInfo?.heading}
         content={data?.aboutInfo?.content}
