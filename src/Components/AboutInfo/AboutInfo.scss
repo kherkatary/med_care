@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+.about_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 3rem 1rem;
+    
+    .content{
+       .heading{
+        font-family: 'Poppins', sans-serif;
+        padding: 1rem 0;
+       }
+
+       .para{
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.1rem;
+        color: rgb(89, 89, 89);
+       }
+        padding: 5% 10%;
+
+    }
+
+    .aboutImage{
+        padding: 1rem;
+       
+        img{
+
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            width: 85%;
+        }
+    }
+}
+
+.centerElements{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+
+}

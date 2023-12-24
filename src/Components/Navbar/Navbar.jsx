@@ -15,12 +15,12 @@ const Navbar = () => {
 
          <nav className="nav-links">
             <ul className="max-width-links">
-               <li><a href="/#" className="home-menu">HOME</a></li>
-               <li><a href="/#">PAGES</a></li>
-               <li><a href="/#">ABOUT US</a></li>
-               <li><a href="/#">SERVICES</a></li>
-               <li><a href="/#">NEWS</a></li>
-               <li><a href="/#">CONTACT</a></li>
+               <li><a href="/" className="home-menu">HOME</a></li>
+               <li><a href="/pages">PAGES</a></li>
+               <li><a href="/about">ABOUT US</a></li>
+               <li><a href="/services">SERVICES</a></li>
+               <li><a href="/news">NEWS</a></li>
+               <li><a href="/contact">CONTACT</a></li>
 
             </ul>
          </nav>
@@ -32,12 +32,12 @@ const Navbar = () => {
             visible &&  <div className="div-links">
             
                <ul className="min-width-links">
-                  <li><a href="/#" className="home-menu">HOME</a></li>
-                  <li><a href="/#">PAGES</a></li>
-                  <li><a href="/#">ABOUT US</a></li>
-                  <li><a href="/#">SERVICES</a></li>
-                  <li><a href="/#">NEWS</a></li>
-                  <li><a href="/#">CONTACT</a></li>
+                  <li><a href="/" className="home-menu">HOME</a></li>
+                  <li><a href="/pages">PAGES</a></li>
+                  <li><a href="/about">ABOUT US</a></li>
+                  <li><a href="/services">SERVICES</a></li>
+                  <li><a href="/news">NEWS</a></li>
+                  <li><a href="/contact">CONTACT</a></li>
 
                </ul>
             </div> 
