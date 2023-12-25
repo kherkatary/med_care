@@ -8,6 +8,7 @@ import Quote from "./QuoteButton/Quote";
 import AboutInfo from "./AboutInfo/AboutInfo";
 import Cards from "./Team/Cards/Cards";
 import TeamCardHolder from "./Team/TeamCardHolder/TeamCardHolder";
+import ScrollToTop from "./ScrollToTop/ScrollToTop";
 
 
-export {Navbar, Footer, Button, NewsPreview, ContactUsFooter, TileDesc, Quote, AboutInfo, Cards, TeamCardHolder}
+export {Navbar, Footer, Button, NewsPreview, ContactUsFooter, TileDesc, Quote, AboutInfo, Cards, TeamCardHolder, ScrollToTop}
