@@ -14,7 +14,7 @@ const TeamCardHolder = ({ heading }) => {
     return (
         <>
             <div className='holderContainer'>
-                <h1 className='holderHeading' style={{ backgroundImage: `URL("${background}")` }}>
+                <h1 className='holderHeading'>
                     <div className="headingTitle">{heading}</div>
                 </h1>
                 <div className="holder">
@@ -27,7 +27,7 @@ const TeamCardHolder = ({ heading }) => {
             <div className="cardCarousal">
 
                 <Swiper className="mySwiper"
-                    slidesPerView={1}
+                    slidesPerView={1.5}
                     effect="coverflow"
                     grabCursor={1}
                     centeredSlides={1}
