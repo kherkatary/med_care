@@ -15,7 +15,7 @@
     .holder{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        padding: 5rem 2rem;
+        padding: 1rem 2rem;
         box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
         @media screen and ( max-width:600px) {
                 display: none;
@@ -25,7 +25,7 @@
 
 .cardCarousal{
 
-    padding: 2rem 0;
+    padding: 0.2rem 0;
     height: fit-content;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
    
