@@ -32,7 +32,7 @@ const Footer = () => {
         <h3>USEFULL LINKS</h3>
         <div className="linksContainer">
 
-          <Link className="link">FAQs</Link>
+          <Link to="/teams" className="link">Meet Our Team</Link>
           <Link className="link">Doctors</Link>
           <Link className="link">Book an Apointment</Link>
           <Link className="link">Services</Link>
