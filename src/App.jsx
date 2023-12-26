@@ -7,10 +7,10 @@ import { Routes, Route } from 'react-router-dom'
 
 function App() {
 
-  const [load, setLoading] = useState(true);
+  const [load, setLoad] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 3000)
+    setTimeout(() => setLoad(false), 3000)
   }, [])
 
   return (
