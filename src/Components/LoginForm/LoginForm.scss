@@ -2,6 +2,9 @@
     padding: 3rem;
     width: 80%;
 
+    @media screen and (max-width: 400px) {
+        width: 100%;
+    }
 
     .formHeading {
         text-align: center;
@@ -58,11 +61,13 @@
     
     }
 
-    .forgotPassword{
+    .hotLink{
         margin: auto;
         color: rgb(117, 117, 117);
         
     }
+
+    
 }
 
 

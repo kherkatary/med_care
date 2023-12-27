@@ -1,10 +1,10 @@
-import './Login.scss'
+import './Register.scss'
 import { Player } from '@lottiefiles/react-lottie-player'
 import loginAnimation from '../../assets/loginAnimation.json'
 import { LoginForm } from '../../Components'
 
 
-const Login = () => {
+const Register = () => {
 
   return (
     <div className='login'>
@@ -14,11 +14,11 @@ const Login = () => {
         </div>
       </div>
       <div className="logForm centerElements">
-        <LoginForm type="Login" />
+        <LoginForm type="Register" />
       </div>
     </div>
 
   )
 }
 
-export default Login
+export default Register
