@@ -1,6 +1,6 @@
 .login{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     height: 90vh;
 
     .display{
@@ -10,9 +10,9 @@
 
         .info{
             background-color: rgba(160, 160, 160, 0.5);
+            text-align: center;
             color: white;
             height: 100%;
-            width: 100%;
         }
 
        
