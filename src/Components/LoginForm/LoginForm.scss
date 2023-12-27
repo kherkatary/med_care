@@ -1,8 +1,9 @@
 .loginForm {
     padding: 3rem;
+   
     width: 80%;
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 1000px) {
         width: 100%;
     }
 

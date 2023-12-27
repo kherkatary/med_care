@@ -1,4 +1,4 @@
-import './Register.scss'
+import './Login.scss'
 import { Player } from '@lottiefiles/react-lottie-player'
 import loginAnimation from '../../assets/loginAnimation.json'
 import { LoginForm } from '../../Components'
