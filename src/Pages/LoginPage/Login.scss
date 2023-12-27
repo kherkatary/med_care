@@ -1,3 +1,31 @@
 .login{
-    min-height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    height: 90vh;
+
+    .display{
+        box-shadow: 16px 0px 15px -3px rgba(0,0,0,0.1);
+
+        background-position: center;
+
+        .info{
+            background-color: rgba(160, 160, 160, 0.5);
+            color: white;
+            height: 100%;
+            width: 100%;
+        }
+
+       
+    }
+
+}
+
+.centerElements{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bd{
+    border: 1px solid black;
 }

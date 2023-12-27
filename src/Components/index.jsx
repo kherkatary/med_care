@@ -9,6 +9,6 @@ import AboutInfo from "./AboutInfo/AboutInfo";
 import Cards from "./Team/Cards/Cards";
 import TeamCardHolder from "./Team/TeamCardHolder/TeamCardHolder";
 import ScrollToTop from "./ScrollToTop/ScrollToTop";
+import LoginForm from "./LoginForm/LoginForm";
 
-
-export {Navbar, Footer, Button, NewsPreview, ContactUsFooter, TileDesc, Quote, AboutInfo, Cards, TeamCardHolder, ScrollToTop}
+export {Navbar, Footer, Button, NewsPreview, ContactUsFooter, TileDesc, Quote, AboutInfo, Cards, TeamCardHolder, ScrollToTop, LoginForm}
