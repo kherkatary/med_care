@@ -4,6 +4,7 @@ import './LoginForm.scss'
 import { Link } from 'react-router-dom';
 const LoginForm = ({ type }) => {
 
+
     useEffect(() => {
         checkType()
     })
@@ -18,7 +19,61 @@ const LoginForm = ({ type }) => {
         if (type === "Register") { setRegis("block") }
     }
 
+    const submitLogin = async () => {
+        try {
 
+            const res = await fetch('https://medicare-api-df85.onrender.com/api/v1/auth/login', {
+                method: 'POST',
+                body: JSON.stringify({
+                    email: email,
+                    password: pass
+                }),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+
+            });
+            const result = await res.json()
+            console.log(result);
+
+        } catch (err) { console.log(`Login Error: ${err}`) }
+
+
+    }
+
+    const submitRegister = async () => {
+        try {
+
+            console.log("running Submit register function")
+            const res = await fetch('https://medicare-api-df85.onrender.com/api/v1/auth/register', {
+                method: 'POST',
+                body: JSON.stringify({
+                    name: name,
+                    email: email,
+                    password: pass
+                }),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+
+            });
+            const result = await res.json()
+            console.log(result);
+
+        } catch (err) { console.log(`Login Error: ${err}`) }
+
+    }
+
+    const submit = () => {
+
+        if (type === 'Regsiter') submitRegister();
+
+        else if (type == 'Login') submitLogin();
+    }
+
+    const clickBtn = () => {
+        console.log("I am clicked");
+    }
 
 
     return (
@@ -48,7 +103,7 @@ const LoginForm = ({ type }) => {
                     <input className='password' value={pass} onChange={(e) => { setPass(e.target.value) }} type="password" placeholder='Password' />
                 </div>
                 <div className="btn">
-                    <button className='submitBtn'>{type}</button>
+                    <button className='submitBtn' onClick={submitLogin}  >{type}</button>
                     <div>
                         <a className='hotLink' href="https://www.youtube.com/watch?v=8d0f9G7lmzg">Forgot password?</a>
                         {
