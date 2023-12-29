@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import './News.scss'
 import { Link } from 'react-router-dom'
 import data from "../../assets/data.json"
@@ -8,16 +8,24 @@ import NewsDesc from '../../Components/NewsDesc/NewsDesc'
 import NewsPreview from '../../Components/footerComponents/NewsPreview'
 
 const News = () => {
+
+ 
+
+
   return (
     <div className='news'>
       <TileDescriptor name='NEWS' description='NEWS' />
       <div className="all-news-contents">
 
         <div className="all-left-portion">
+         
+        
+
+
         {NewsData?.map(newsdata => (
-            <NewsDesc key={newsdata.id} heading={newsdata.heading} date={newsdata.date}
-             author={newsdata.author} speciality={newsdata.author} commnets={newsdata.comments}
-             details={newsdata.details} />
+            <NewsDesc key={newsdata.id} heading={newsdata.title} date={newsdata.date}
+             author={newsdata.author} speciality={newsdata.speciality} comments={newsdata.comments}
+             details={newsdata.description} src={newsdata.urlToImage}/>
 
           ))}
 

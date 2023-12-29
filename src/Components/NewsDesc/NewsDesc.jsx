@@ -7,7 +7,9 @@ const  NewsDesc=(props)=> {
     <div>
      <div className="overall-items">
         <div className="left-side">
-          <div className="image-tile">
+          <div className="image-tile" style={{
+          backgroundImage: `url(${props.src})`
+        }}>
             <div className="date"><p className='p-date'>{props.date}</p></div>
           </div>
           <div className="content-tile">
