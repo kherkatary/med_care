@@ -2,6 +2,7 @@ import React,{ useState, Component } from "react";
 import "./Navbar.scss"
 import { IoMenu } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import Logo from '../Logo/Logo'
 
 
 const Navbar = () => {
@@ -11,7 +12,7 @@ const Navbar = () => {
    return (
       <>
       <header>   
-         <img src='./white-logo.png' alt="" />
+         <Logo />
 
          <nav className="nav-links">
             <ul className="max-width-links">
