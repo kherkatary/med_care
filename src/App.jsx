@@ -1,6 +1,6 @@
 
 import { Footer, Navbar } from './Components'
-import { About, ErrorPage, Home, Login, News, Contact} from './Pages/index'
+import { About, ErrorPage, Home, Login, News, Contact, Teams, Register} from './Pages/index'
 import { Routes, Route} from 'react-router-dom'
 
 
@@ -19,8 +19,10 @@ function App() {
           {/* <Route path='/services' element={<Login/>}/> */}
           <Route exact path='/news' element={<News />} />
           <Route path='/contact' element={<Contact/>}/>
+          <Route path='/register' element={<Register/>}/>
         
         <Route path='*' element={<ErrorPage/>}/>
+        <Route path='/teams' element={<Teams/>}/>
       </Routes>
       <Footer />
     </>
