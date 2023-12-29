@@ -9,9 +9,6 @@ import NewsPreview from '../../Components/footerComponents/NewsPreview'
 
 const News = () => {
 
- 
-
-
   return (
     <div className='news'>
       <TileDescriptor name='NEWS' description='NEWS' />
@@ -19,7 +16,6 @@ const News = () => {
 
         <div className="all-left-portion">
          
-        
 
 
         {NewsData?.map(newsdata => (
