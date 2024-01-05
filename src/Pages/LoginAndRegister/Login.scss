@@ -1,0 +1,33 @@
+.login {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    height: fit-content;
+
+    .display {
+        box-shadow: 0px 2px 15px -3px rgba(0,0,0,0.1);
+        position: relative;
+        @media screen and (max-width:900px) {
+            display: none;
+        }
+
+        .loginAni {
+            width: 70%;
+        }
+
+        
+    }
+
+    .logForm{
+        height: inherit;
+    }
+}
+
+.centerElements {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bd {
+    border: 1px solid black;
+}

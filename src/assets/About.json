@@ -1,0 +1,25 @@
+{
+    "quote":{
+        "heading":"We Provide the best doctors in the world",
+        "subHeading":"Esteem spirit temper too say adieus who direct esteem. It esteems luckily picture placing drawing. ",
+        "buttonTitile":"Make An Appointment",
+        "backgroundImage":"https://img.freepik.com/free-photo/indian-doctor-receives-patient-tells-him-about-results-tests-medicine-health_496169-2765.jpg?w=1380&t=st=1703230410~exp=1703231010~hmac=6e6398576022a703ec8536efa62b5d1c0657dab0536d7725e6c92d1f55dc5af5"
+    },
+
+    "aboutInfo":{
+        "heading":"Welcome to Medica Health Center",
+        "content":"agakjh kajfgh lagf  ajgdhkjhfs gslkjfgh sjhf gfdftemper too say adieus who direct esteem. It esteems luckily picture placing drawing. Apartments frequently or motionless on reasonable projecting expression.",
+        "imageLink":"https://img.freepik.com/free-photo/doctor-nurses-special-equipment_23-2148980721.jpg?w=1060&t=st=1703231046~exp=1703231646~hmac=eb7b397169dca97559ae0ff586ca654c60ed44f4db967c00ef8129e91492a02e",
+        "iconName":"healthicons:doctor-female-outline"
+
+    },
+
+    "aboutInfo2":{
+
+        "heading":"Leading edge care for Your family",
+        "content":"agakjh kajfgh lagf  ajgdhkjhfs gslkjfgh sjhf gfdftemper too say adieus who direct esteem. It esteems luckily picture placing drawing. Apartments frequently or motionless on reasonable projecting expression.",
+        "imageLink":"https://img.freepik.com/free-photo/nurse-portrait-hospital_23-2150780366.jpg?t=st=1703246884~exp=1703250484~hmac=57a4af9ba3e34a6ad346dc7756d587e6dbcda36dd19403a127485c1e5f9a8d2d&w=1380",
+        "iconName":"healthicons:doctor-female-outline"
+
+    }
+}

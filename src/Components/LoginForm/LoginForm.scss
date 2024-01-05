@@ -1,0 +1,80 @@
+.loginForm {
+    padding: 3rem;
+   
+    width: 80%;
+
+    @media screen and (max-width: 900px) {
+        width: 100%;
+    }
+
+    .formHeading {
+        text-align: center;
+    }
+
+    .highlight{
+        border-bottom: 2px solid rgb(58, 58, 214) !important;
+    }
+    .inputBox {
+
+        padding: 0.5rem 0;
+        border-bottom: 1.6px solid rgb(214, 214, 214);
+
+        input {
+            font-size: 1rem;
+            font-weight: bolder;
+            width: 80%;
+            padding: 0.5rem 0.5rem;
+
+            &:focus{
+                outline: none !important;
+                color: black;
+            }
+
+        }
+
+    }
+
+
+    .oAuth{
+        margin: auto;
+        width: 10rem;
+
+        .oAuthIcons{
+            margin: 1rem 0.5rem;
+            cursor: pointer;
+        }
+    }
+
+}
+
+.btn{
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    .submitBtn{
+        background-color: rgb(35, 74, 192);
+        border-radius: 0.2rem;
+        cursor: pointer;
+        color: white;
+        padding: 1rem 3rem;
+        margin: 2rem 0 0.5rem 0;
+        font-size: 1.1rem;
+    
+    }
+
+    .hotLink{
+        margin: auto;
+        color: rgb(117, 117, 117);
+        
+    }
+
+    
+}
+
+
+.centerElements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

@@ -6,8 +6,10 @@
   border: 0;
   box-sizing: border-box;
   font-family: 'Titillium Web', sans-serif;
+  
 
   a{
+    user-select: none; 
     margin: 0 2rem 0 0;
     text-decoration: none;
     color: black;
@@ -26,18 +28,18 @@
 
 // Header Section Max-width View of the screen
 header{  
+  width: 100%;
+  z-index: 10;
   background-color: rgb(255, 255, 255);
   height: 70px;
-  font-size: 20px;
+  font-size: 17px;
+  font-weight: bold;
   display: flex;
   align-items: center;
   padding: 0 2% 0 7%;
   box-shadow: 0px 4px 15px -3px rgba(0,0,0,0.1);
-
-  img{
-    height: 57px;
-    width: 160px;
-  }
+  
+  
   .nav-links{
     margin-left: auto;
      li{

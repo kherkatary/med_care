@@ -1,14 +1,13 @@
 import React from 'react'
 import './TileDesc.scss'
 
-function TileDesc(props) {
+const TileDesc=(props)=> {
   return (
-   <>
     <div className='overall-div'>
-      <p className='heading'>{props.name}</p>
-      <p className='small-heading'>HOME | {props.name}</p>
+      <p className='heading'>{props.name.toUpperCase()}</p>
+      <p className='small-heading'>HOME | {props.description}</p>
     </div>
-   </>
+
   )
 }
 
