@@ -1,0 +1,82 @@
+.overall-items{
+   font-family: 'Courier New', Courier, monospace;
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+.left-side{
+   .image-tile{
+      transition: 0.5s ease-in;
+      height: 300px;
+      width: 85%;
+      background-color: rgb(206, 194, 254);
+      margin-left: auto;
+      
+      .date{
+         position: relative;
+         top: 30px;
+         height: 35px;
+         width: 130px;
+         z-index: 2px;
+         color: white;
+         background-color: blue;
+         
+         .p-date{
+            text-align:center;
+            font-weight: bolder;
+            
+         }
+      }
+      
+   }
+   .content-tile{
+      overflow: hidden;
+      transition: 0.5s ease-in;
+      padding: 10px 20px 10px 20px;
+      height: 270px;
+      width: 85%;
+      background-color: rgb(224, 249, 224);
+      margin-left: auto;
+      padding-bottom: 10px;
+
+      #blue-color{
+         color: blue;
+         font-weight: bold;
+      }
+      .p-heading{
+         font-size: 30px;
+         font-weight: bolder;
+      }
+      .p-author{
+         font-size: 15px;
+      }
+      .div-details{
+         height: 160px;
+         background-color: rgb(240, 227, 253);
+         overflow: hidden;
+         .p-details{
+            padding-top: 10px;
+         }
+      }
+      
+   }
+
+   
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+   .right-side{
+      display: none;
+      transition: 0.5s ease-in;  
+   }
+   .left-side{
+      width: 100%;
+      .image-tile, .content-tile{
+         width: 100%;
+      }
+   }
+   
+   
+ }

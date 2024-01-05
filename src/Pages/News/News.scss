@@ -1,0 +1,127 @@
+.all-news-contents{
+   display: grid;
+   grid-template-columns: 60% 40%; 
+
+   .all-left-portion{ 
+      background-color: #ffffff; 
+      padding: 15px 15px 15px 15px;
+      transition: 0.5s ease-in;
+
+      .pages-number{
+         display: flex;
+         float: left;
+         padding-left: 15%;
+
+         .number{
+            border: 2px solid black;
+            margin-right: 7px;
+            height: 30px;
+            width: 30px;
+            text-align: center;
+         }
+         .number:hover{
+            cursor: default;
+            color: rgb(0, 21, 255);
+            border-color: rgb(51, 0, 255);
+         }
+      }
+    } 
+
+
+    .all-right-portion{ 
+      color: rgb(0, 0, 0);
+      padding: 70px 0 0 15%;
+
+      .for-emergencies{
+        height: 280px;
+        width: 320px;
+        background-color: rgb(36, 202, 253);
+        color: white;
+        padding: 45px;
+        span{
+           color: black;
+         }
+      }
+      .for-categories{
+         margin-top: 50px;
+         margin-bottom: 150px;
+         width: 320px;
+         ul{
+            padding: 10px 0 0 10px;
+         }
+         li{
+
+            padding: 5px;
+            cursor: default;
+
+         }
+         hr{
+            border: 1px solid rgb(225, 224, 224);  
+         }
+         li:hover{
+            translate: 4px;
+            transition: 0.1s ease;
+            color: rgb(85, 88, 252);
+            
+         }
+
+      }
+
+      .book-an-appointment{
+         margin-top: 50px;
+         padding: 20px 8% 0 8%;
+         height: 400px;
+         width: 320px;
+         color: white;
+         background-color: rgb(66, 66, 248);
+
+         button{
+            align-self: center;
+            margin-top: 40px;
+            padding: 2px 0 2px 0;
+            height: 50px;
+            font-size: 18px;
+            border: 2px white;
+            cursor: pointer;
+         }
+         
+         
+         .appointment{
+            width: 200px;
+            background-color: transparent;
+            
+            color: white;
+            border: 2px solid white;
+            
+         }
+         .input-form{
+            box-sizing: border-box;
+            color: white;
+            width: 100%;
+            margin-top: 25px ;
+            padding: 7px ;
+            background-color: rgb(84, 84, 248);
+         }
+         ::placeholder {
+            color: rgb(255, 255, 255);
+            opacity: 1; /* Firefox */
+          }
+      }
+    }
+   
+}
+@media screen and (max-width: 900px) {
+   .all-news-contents{
+      grid-template-columns: 100%;
+      transition: 0.5s ease-in;  
+   }
+   .all-right-portion{
+      display: none;
+      transition: 0.5s ease-in;  
+   }
+   .all-left-portion{
+      width: 100%;
+   }
+   
+   
+ }
