@@ -1,53 +1,56 @@
-.body{
+.appointmentContainer{
     background-color: #1063cf;
+    max-width: 90rem;
     margin: auto;
     padding: 25px;
     color: white;
     width: 80%;
     margin-top: 10vw;
     margin-bottom: 10vw;
-}
-.body h2{
-    margin: 10px;
-    padding: 10px;
-    font-size: xx-large;
-}
-.input-boxes{
-    display: grid;
-    grid-template-columns: 45% 45%;
-    margin: 10px;
-    padding: 10px;
-    row-gap: 30px;
-    column-gap: 40px;
-}
-.user-input {
-    background-color: #2f88fd;
-    height: 50px;
-}
-::placeholder{
-    color: white;
-}
-input, select, textarea{
-    color: #ffffff;
-    font-weight: 500;
-}
-.btn{
-    margin: 10px;
-    padding: 10px; 
-    background-color: #1063cf;
-    color: #ffffff;
-    border: 3px solid white;
-    margin-left: 20px;
-    font-size: large;
-    font-weight: 700;
-}
-@media only screen and (max-width:768px){
+    h2{
+        margin: 10px;
+        padding: 10px;
+        font-size: xx-large;
+    }
     .input-boxes{
-        grid-template-columns: 80%;
+        display: grid;
+        grid-template-columns: 45% 45%;
+        margin: 10px;
+        padding: 10px;
+        row-gap: 30px;
+        column-gap: 40px;
+    }
+    .user-input {
+        background-color: #2f88fd;
+        padding: 1rem 0.5rem;
+        height: 50px;
+    }
+    ::placeholder{
+        color: white;
+    }
+    input, select, textarea{
+        color: #ffffff;
+        font-weight: 500;
+    }
+    .btn{
+        margin: 10px;
+        padding: 10px; 
+        background-color: #1063cf;
+        color: #ffffff;
+        border: 3px solid white;
+        margin-left: 20px;
+        font-size: large;
+        font-weight: 700;
+    }
+    @media only screen and (max-width:768px){
+        .input-boxes{
+            grid-template-columns: 80%;
+        }
+    }
+    @media only screen and (max-width:576px){
+        .appointmentContainer{
+            width: 100vw;
+        }
     }
 }
-@media only screen and (max-width:576px){
-    .body{
-        width: 100vw;
-    }
-}
+

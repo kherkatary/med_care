@@ -1,79 +1,77 @@
-.container{
-    display: block;
-    font-family: sans-serif;
-    }
-    .t{
-        border: solid 2px black;
-        background-image: url("../../../public/nurse.webp") ;
-        position: relative;
-        background-repeat: no-repeat;
-        background-size: cover;
-        top: 0;
-        left: 0;  
-    }
-    .f-white{
-        color: white;
-    }
-    .bgcolor-blue{
-        background-color: rgba(36, 62, 255,0.8);
-        // border :2px red solid;
-        margin: 0;
-        padding: 10px;
-    }
-    .tc{
-        text-align: center;
-        padding: 35px;
-    }
-    .tc img{
-        border-radius: 50%;
-    }
-    .tc h4{
-        padding: 10px;
-        font-size: larger;
-        font-weight: 500;
-    }
-    .testimonials{
-        margin-left: auto;
-        margin-right: auto;
-        padding: 80px 0px 30px 0px;
-        max-width: 700px;
-    }
-    .testimonials h2{
-        font-size: 2rem;
-    }
-    .lines{
-        font-size: 25px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin: 10px 10px 30px 10px;
-    }
-    .numbers{
-        background: linear-gradient(to right, #3de6fa, #243eff);
-        display: flex;
-        flex-wrap: wrap;
-        position: relative;
-        z-index: 1;
-        text-align: center;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin: auto;
-        box-sizing: border-box;
-        height: 10rem;
-    }
-    .counters{
-        font-size: 36px;
-        font-weight: 500;
-        width: 25%;
-        text-align: center;
-    }
-    .numbers h6{
-        font-size: 1rem;
-        font-weight: 500;
-    }
-    .mr{
-        // position: absolute;
-        flex: 0 0 25%;
-        text-align: center;
-        align-items: center;
-        // top: 50%;
-    
-    }
+.container {
+  display: block;
+  font-family: sans-serif;
+  color: rgb(255, 255, 255);
+
+  .t {
+    background-image: url("../../../public/nurse.webp");
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+  }
+  .f-white {
+    color: white;
+  }
+  .bgcolor-blue {
+    background-color: rgba(36, 62, 255, 0.8);
+    // border :2px red solid;
+    margin: 0;
+    padding: 10px;
+  }
+  .tc {
+    text-align: center;
+    padding: 35px;
+  }
+  .tc img {
+    border-radius: 50%;
+  }
+  .tc h4 {
+    padding: 10px;
+    font-size: larger;
+    font-weight: 500;
+  }
+  .testimonials {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px 0px 30px 0px;
+    max-width: 700px;
+  }
+  .testimonials h2 {
+    font-size: 2rem;
+  }
+  .lines {
+    font-size: 25px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px 10px 30px 10px;
+  }
+  .numbers {
+    background: linear-gradient(to right, #3de6fa, #243eff);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+    box-sizing: border-box;
+    height: 10rem;
+  }
+  .counters {
+    font-size: 36px;
+    font-weight: 500;
+    width: 25%;
+    text-align: center;
+  }
+  .numbers h6 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .mr {
+    // position: absolute;
+    flex: 0 0 25%;
+    text-align: center;
+    align-items: center;
+    // top: 50%;
+  }
+}

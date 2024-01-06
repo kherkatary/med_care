@@ -11,6 +11,6 @@ import TeamCardHolder from "./Team/TeamCardHolder/TeamCardHolder";
 import ScrollToTop from "./ScrollToTop/ScrollToTop";
 import LoginForm from "./LoginForm/LoginForm";
 import Testimonial from "./Testimonial/Testimonial"
-import BookAppointment from "./BookAppointment/BookAppointment";
+import Appointment_doc_images from "./BookAppointment/BookAppointment";
 
-export {Navbar, Footer, Button,Testimonial,BookAppointment, NewsPreview, ContactUsFooter, TileDesc, Quote, AboutInfo, Cards, TeamCardHolder, ScrollToTop, LoginForm}
+export {Navbar, Footer, Button,Testimonial,Appointment_doc_images, NewsPreview, ContactUsFooter, TileDesc, Quote, AboutInfo, Cards, TeamCardHolder, ScrollToTop, LoginForm}

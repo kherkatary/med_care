@@ -1,14 +1,15 @@
 import React from 'react'
 import "./Home.scss"
 import { Link } from 'react-router-dom'
-import { Button } from '../../Components'
-import Navbar from '../../Components/Navbar/Navbar'
+import { Button ,Navbar,Testimonial,Appointment_doc_images} from '../../Components'
 import Carousel from '../../Components/Carousel/Carousel'
 
 const Home = () => {
   return (
     <div className='home'>
      <Carousel />
+     <Testimonial/>
+     <Appointment_doc_images/>
 
     </div>
   )
