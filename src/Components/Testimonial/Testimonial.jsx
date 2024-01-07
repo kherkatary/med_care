@@ -1,7 +1,18 @@
 import React from "react";
-// import Carousel from '../Carousel/Carousel';
+import { animated, useSpring } from "react-spring"; 
 
 import "./Testimonial.scss";
+
+function CountingNumbers({ n, head }) {
+  const { number } = useSpring({
+    from: { number: 0 },
+    number: n,
+    delay: 200,
+    config: { mass: 1, tension: 20, friction: 10 },
+  });
+  <h4>{head}</h4>;
+  return <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>;
+}
 
 const Testimonial = () => {
   return (
@@ -29,29 +40,21 @@ const Testimonial = () => {
         </div>
       </div>
       <div className="numbers">
-        <div className="mr">
-          <h2>
-            <span className="counter"> 8723</span>
-          </h2>
-          <h6>Patients since opening</h6>
+        <div className="patients">
+          <CountingNumbers n={8723} />
+          <p> Patients since opening </p>
         </div>
-        <div className="mr">
-          <h2>
-            <span className="counter"> 120</span>
-          </h2>
-          <h6>Doctors Available</h6>
+        <div className="doctors">
+          <CountingNumbers n={120} />
+          <p>Doctors Available</p>
         </div>
-        <div className="mr">
-          <h2>
-            <span className="counter"> 20</span>
-          </h2>
-          <h6>Years of Experience</h6>
+        <div className="years_experience">
+          <CountingNumbers n={20} />
+          <p>Years of Experience</p>
         </div>
-        <div className="mr">
-          <h2>
-            <span className="counter"> 83</span>
-          </h2>
-          <h6>Pro bono works</h6>
+        <div className="bono_works">
+          <CountingNumbers n={83} />
+          <p>Pro bono works</p>
         </div>
       </div>
     </div>
