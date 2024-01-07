@@ -1,7 +1,7 @@
-
-import { Footer, Navbar} from './Components'
+import { Footer, Navbar } from './Components'
 import { About, ErrorPage, Home, Login, News, Contact, Teams, Register} from './Pages/index'
 import { Routes, Route} from 'react-router-dom'
+import './App.css'
 
 
 function App() {
