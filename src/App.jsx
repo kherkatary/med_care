@@ -1,7 +1,8 @@
 
-import { Footer, Navbar ,Testimonial,BookAppointment} from './Components'
-import { Home, Login } from './Pages'
-import { Route, Routes } from 'react-router-dom'
+import { Footer, Navbar} from './Components'
+import { About, ErrorPage, Home, Login, News, Contact, Teams, Register} from './Pages/index'
+import { Routes, Route} from 'react-router-dom'
+
 
 function App() {
 
@@ -9,11 +10,20 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/login' element={<Login/>}/>
+        
+          <Route exact path='/' element={<Home />} />
+          <Route path='/about' element={<About/>}/>
+        <Route exact path='/login' element={<Login />} />
+          {/* <Route path='/pages' element={<Login/>}/> */}
+          {/* <Route path='/aboutus' element={<Login/>}/> */}
+          {/* <Route path='/services' element={<Login/>}/> */}
+          <Route exact path='/news' element={<News />} />
+          <Route path='/contact' element={<Contact/>}/>
+          <Route path='/register' element={<Register/>}/>
+        
+        <Route path='*' element={<ErrorPage/>}/>
+        <Route path='/teams' element={<Teams/>}/>
       </Routes>
-      <Testimonial/>
-      <BookAppointment/>
       <Footer />
     </>
   )

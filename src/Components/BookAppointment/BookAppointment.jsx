@@ -4,7 +4,7 @@ import "./BookAppointment.scss"
 const BookAppointment=()=>{
     return(
         <div>
-            <div className="body">
+            <div className="appointmentContainer">
                 <h2>Book an Appointment</h2>
                 <div className="input-boxes">
                     <input type="text" placeholder="Name" className="user-input"/>

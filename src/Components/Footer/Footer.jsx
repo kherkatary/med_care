@@ -1,5 +1,6 @@
 import "./Footer.scss"
 import NewsPreview from "../footerComponents/NewsPreview";
+import ContactUsFooter from "../footerComponents/ContactUsFooter/ContactUsFooter";
 import { Icon } from '@iconify/react';
 import data from "../../assets/data.json"
 import { Link } from "react-router-dom";
@@ -31,7 +32,7 @@ const Footer = () => {
         <h3>USEFULL LINKS</h3>
         <div className="linksContainer">
 
-          <Link className="link">FAQs</Link>
+          <Link to="/teams" className="link">Meet Our Team</Link>
           <Link className="link">Doctors</Link>
           <Link className="link">Book an Apointment</Link>
           <Link className="link">Services</Link>
@@ -41,29 +42,10 @@ const Footer = () => {
         </div>
 
       </div>
-      <div className="fourth containerStyles">
-        <h3>CONTACT US</h3>
-        <div className="contact">
-        <div className="contactMethod">
-          <div className="contactLogo"><Icon icon="ion:alarm-outline" color="white" width="50" /></div>
-          <div className="contactInfo">Monday - Friday 08:00 - 21:00 Saturday & Sunday - CLOSED</div>
-        </div>
 
-        <div className="contactMethod">
-          <div className="contactLogo"><Icon icon="carbon:location" color="white" width="50" /></div>
-          <div className="contactInfo">Lamas Carbajal Str, no 14-18 41770 Montellano</div>
-        </div>
-
-        <div className="contactMethod">
-          <div className="contactLogo"><Icon icon="material-symbols:mail-outline" color="white" width="50" /></div>
-          <div className="contactInfo">0080 673 729 766 contact@business.com</div>
-        </div>
-
-        </div>
-        
+      <div className="containerStyles">
+        <ContactUsFooter bgColor="none"/>
       </div>
-
-
     </div>
   )
 }

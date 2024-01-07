@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.cardContainer {
+    flex-direction: column;
+    margin: 1rem;
+    width: 20rem;    
+    .profileOutline {
+        border: 0.6rem solid rgb(49, 131, 240);
+        border-radius: 50%;
+        width: 80%;
+        aspect-ratio: 1/1;
+        margin: 0 0 3rem 0;
+    }
+
+    .profile {
+        width: 100%;
+        width: 80%;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+            filter: grayscale(100);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+    }
+
+    .designation {
+        font-family: 'Poppins', sans-serif;
+        color: rgb(49, 131, 240);
+        font-weight: bold;
+        padding: 0.5rem 0;
+    }
+
+    .heading {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.3rem;
+        padding: 0.3rem 0;
+    }
+
+    .bio {
+        font-family: 'Poppins', sans-serif;
+        width: 80%;
+        font-size: 0.8rem;
+        line-height: 1.2;
+        font-weight: bold;
+        color: #9e9e9e;
+        padding: 0.5rem 0;
+    }
+
+    .social {
+        width: 80%;
+        margin: 1rem 0 0 0;
+        padding: 0.5rem 0;
+        background-color: rgb(49, 131, 240);
+
+        a {
+            margin: 0;
+            padding: 1% 5%;
+
+        }
+
+    }
+
+    @media screen and (max-width:500px) {
+        width: 90%;
+
+    }
+}
+
+.centerElements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardCarousal{
+    border: 1px oslid black;
+    height: 90vh;
+}

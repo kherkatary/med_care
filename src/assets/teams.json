@@ -1,0 +1,127 @@
+[
+    {
+      "id": 1,
+      "name": "Sandeep Kherkatary",
+      "designation":"Software Engineer",
+      "username": "Bret",
+      "image":"https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?w=1060&t=st=1703438213~exp=1703438813~hmac=a58d3d67a4ba8c6f93a064ec22dd9eff47a1d1114357ddf1ea8c27910e925f26",
+      "email": "Sincere@april.biz",
+      "address": {
+        "street": "Kulas Light",
+        "suite": "Apt. 556",
+        "city": "Gwenborough",
+        "zipcode": "92998-3874",
+        "geo": {
+          "lat": "-37.3159",
+          "lng": "81.1496"
+        }
+      },
+      "phone": "1-770-736-8031 x56442",
+      "website": "hildegard.org",
+      "company": {
+        "name": "Romaguera-Crona",
+        "catchPhrase": "Multi-layered client-server neural-net Multi-layered client-server",
+        "bs": "harness real-time e-markets"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Indrajit Ray",
+      "designation":"Software Engineer",
+      "image":"https://img.freepik.com/free-photo/close-up-portrait-smiling-young-bearded-man_171337-4819.jpg?w=1380&t=st=1703438234~exp=1703438834~hmac=3524db45af6e5a3a64609f67209acf8216d5acefd2f65ff9483a849bc26b770a",
+      "username": "Antonette",
+      "email": "Shanna@melissa.tv",
+      "address": {
+        "street": "Victor Plains",
+        "suite": "Suite 879",
+        "city": "Wisokyburgh",
+        "zipcode": "90566-7771",
+        "geo": {
+          "lat": "-43.9509",
+          "lng": "-34.4618"
+        }
+      },
+      "phone": "010-692-6593 x09125",
+      "website": "anastasia.net",
+      "company": {
+        "name": "Deckow-Crist",
+        "catchPhrase": "Proactive didactic Proactive didactic contingency contingency",
+        "bs": "synergize scalable supply-chains"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Hrishyak Kalita",
+      "designation":"Software Engineer",
+      "username": "Samantha",
+      "image":"https://img.freepik.com/free-photo/close-up-portrait-young-bearded-man-white-shirt-jacket-posing-camera-with-broad-smile-isolated-gray_171337-629.jpg?w=1380&t=st=1703438288~exp=1703438888~hmac=39abd6886913b17a0ee1aedacd518d5b32f7b5f212715dbe3f0a2f64f92ce833",
+      "email": "Nathan@yesenia.net",
+      "address": {
+        "street": "Douglas Extension",
+        "suite": "Suite 847",
+        "city": "McKenziehaven",
+        "zipcode": "59590-4157",
+        "geo": {
+          "lat": "-68.6102",
+          "lng": "-47.0653"
+        }
+      },
+      "phone": "1-463-123-4447",
+      "website": "ramiro.info",
+      "company": {
+        "name": "Romaguera-Jacobson",
+        "catchPhrase": "Face to face bifurcated Proactive didactic contingency interface",
+        "bs": "e-enable strategic applications"
+      }
+    },
+    {
+        "id": 4,
+        "name": "Sumit Kumar Sah",
+        "designation":"Software Engineer",
+        "username": "Antonette",
+        "image":"https://img.freepik.com/free-photo/cheerful-indian-businessman-smiling-closeup-portrait-jobs-career-campaign_53876-129417.jpg?w=1380&t=st=1703438329~exp=1703438929~hmac=10e2e650c63e2ed6856b008cd14aa4ed3e49b8fead305ebfafa1a7ced48b24ef",
+        "email": "Shanna@melissa.tv",
+        "address": {
+          "street": "Victor Plains",
+          "suite": "Suite 879",
+          "city": "Wisokyburgh",
+          "zipcode": "90566-7771",
+          "geo": {
+            "lat": "-43.9509",
+            "lng": "-34.4618"
+          }
+        },
+        "phone": "010-692-6593 x09125",
+        "website": "anastasia.net",
+        "company": {
+          "name": "Deckow-Crist",
+          "catchPhrase": "Proactive didactic Proactive didactic contingency contingency",
+          "bs": "synergize scalable supply-chains"
+        }
+      },
+      {
+        "id": 5,
+        "name": "Bishal Kashyap",
+        "designation":"Software Engineer",
+        "image":"https://img.freepik.com/free-photo/close-up-portrait-curly-handsome-european-male_176532-8133.jpg?w=1380&t=st=1703438355~exp=1703438955~hmac=4d520ab5621999b868426dba0d4ac817fa44f65bd230236698bf4f3eed834087",
+        "username": "Bret",
+        "email": "Sincere@april.biz",
+        "address": {
+          "street": "Kulas Light",
+          "suite": "Apt. 556",
+          "city": "Gwenborough",
+          "zipcode": "92998-3874",
+          "geo": {
+            "lat": "-37.3159",
+            "lng": "81.1496"
+          }
+        },
+        "phone": "1-770-736-8031 x56442",
+        "website": "hildegard.org",
+        "company": {
+          "name": "Romaguera-Crona",
+          "catchPhrase": "Multi-layered client-server neural-net Multi-layered client-server",
+          "bs": "harness real-time e-markets"
+        }
+      }
+  ]
