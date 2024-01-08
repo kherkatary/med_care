@@ -7,4 +7,5 @@ import ErrorPage from "./404/ErrorPage";
 import Teams from "./Teams/Teams";
 import Register from "./LoginAndRegister/Register";
 
+
 export {Home, Login, News, Contact, About, ErrorPage, Teams, Register}

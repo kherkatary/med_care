@@ -1,0 +1,89 @@
+.container {
+  display: block;
+  font-family: sans-serif;
+  color: rgb(255, 255, 255);
+
+  .t {
+    background-image: url("/nurse.webp");
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+  }
+  .f-white {
+    color: white;
+  }
+  .bgcolor-blue {
+    background-color: rgba(36, 62, 255, 0.6);
+    // border :2px red solid;
+    margin: 0;
+    padding: 10px;
+  }
+  .tc {
+    text-align: center;
+    padding: 35px;
+  }
+  .tc img {
+    border-radius: 50%;
+  }
+  .tc h4 {
+    padding: 10px;
+    font-size: larger;
+    font-weight: 500;
+  }
+  .testimonials {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px 0px 30px 0px;
+    max-width: 700px;
+  }
+  .testimonials h2 {
+    font-size: 2rem;
+  }
+  .lines {
+    font-size: 25px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px 10px 30px 10px;
+  }
+  .numbers {
+    background: linear-gradient(to right, #3de6fa, #243eff);
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 0 5%;
+    height: 13rem;
+    font-size: 36px;
+    font-weight: 600;
+    p{
+      font-size: 25px;
+      font-weight: 500;
+      padding: 10px 0;
+    }
+  }
+  @media only screen and (max-width:992px){
+    .numbers{
+      height: 20rem;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-gap: 30px;
+    }
+  }
+  @media only screen and (max-width:576px){
+    .numbers{
+      height: 45rem;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-gap: 55px;
+      .patients{
+        padding-top: 10rem;
+      }
+      .bono_works{
+        padding-bottom: 10rem;
+      }
+    }
+  }
+}
