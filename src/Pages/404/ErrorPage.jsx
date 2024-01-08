@@ -10,12 +10,10 @@ const ErrorPage = () => {
 
   return (
 
-    
-     
 
-      <div className='errorContainer'>
-        <Player className='lottieAnimation' src={ErrorAnimation} loop autoplay />
-      </div>
+    <div className='errorContainer'>
+      <Player className='lottieAnimation' src={ErrorAnimation} loop autoplay />
+    </div>
 
   )
 }
