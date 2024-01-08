@@ -1,0 +1,40 @@
+.MedicaIntroContainer {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 27% 27% 27%;
+
+    .IntroToAddbox{
+        height: 15rem;
+        width: 100%;
+        position: relative;
+        top: 3rem;
+        z-index: -100;
+        background-color: rgb(197, 204, 6);
+    }
+}
+
+@media screen and (max-width: 993px) {
+    .MedicaIntroContainer {
+        display: grid;
+        grid-template-columns: 45% 45%;
+        padding: 0 5rem 5rem 5rem;
+
+        .SpanAppoint {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .MedicaIntroContainer {
+        display: grid;
+        padding: 0 2% 2% 2%;
+        span {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+}

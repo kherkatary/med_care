@@ -6,6 +6,9 @@ import NewsData from '../../assets/NewsData.json'
 import TileDescriptor from '../../Components/TileDesc/TileDesc'
 import NewsDesc from '../../Components/NewsDesc/NewsDesc'
 import NewsPreview from '../../Components/footerComponents/NewsPreview'
+import Emergency from '../../Components/Emergency/Emergency'
+import Appointment from '../../Components/Appointment/Appointment'
+
 
 const News = () => {
 
@@ -36,9 +39,10 @@ const News = () => {
         <div className="all-right-portion">
 
           <div className="for-emergencies">
-            <h3>For Emergencies</h3>
+            <Emergency/>
+            {/* <h3>For Emergencies</h3>
             <h2><span>+0080 954 4557 884</span></h2>
-            <h4>Ambulance bulao jaldi jaldi...</h4>
+            <h4>Ambulance bulao jaldi jaldi...</h4> */}
           </div>
           <div className="for-categories">
             <h2>Categories</h2>
@@ -58,14 +62,15 @@ const News = () => {
             ))}
           </div>
           <div className="book-an-appointment">
-            <h2>Book an Appointment</h2>
+            <Appointment/>
+            {/* <h2>Book an Appointment</h2>
             <form> 
               <input className='input-form' type="text" placeholder='Name'/>
               <input className='input-form' type="text" placeholder='Phone' name="name" />
               <input className='input-form' type="text" placeholder='E-mail' name="name" />
               <button className='appointment'>Make an Appointment</button>
               
-            </form>
+            </form> */}
           </div>
 
         </div>
