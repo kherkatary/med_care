@@ -40,21 +40,21 @@ const Testimonial = () => {
         </div>
       </div>
       <div className="numbers">
-        <div className="patients">
+        <div className="numbers_div">
           <CountingNumbers n={8723} />
-          <p> Patients since opening </p>
+          <p className="patient_count"> Patients since opening </p>
         </div>
-        <div className="doctors">
+        <div className="numbers_div">
           <CountingNumbers n={120} />
-          <p>Doctors Available</p>
+          <p className="patient_count"> Doctors Available</p>
         </div>
-        <div className="years_experience">
+        <div className="numbers_div">
           <CountingNumbers n={20} />
-          <p>Years of Experience</p>
+          <p className="patient_count">Years of Experience</p>
         </div>
-        <div className="bono_works">
+        <div className="numbers_div">
           <CountingNumbers n={83} />
-          <p>Pro bono works</p>
+          <p className="patient_count">Pro bono works</p>
         </div>
       </div>
     </div>
