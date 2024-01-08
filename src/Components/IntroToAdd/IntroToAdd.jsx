@@ -4,7 +4,6 @@ import './IntroToAdd.scss'
 const IntroToAdd=()=>{
     return (
         <div className='IntroToAddbox'>
-              This is Empty
         </div>
     )
 }

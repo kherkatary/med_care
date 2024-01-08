@@ -27,7 +27,7 @@ export default function Contentinfo() {
                 <button className='Readbtn'>Read More</button>
             </div>
             <div className='DocImg'>
-                This is Image            </div>
+                          </div>
 
         </div>
 
