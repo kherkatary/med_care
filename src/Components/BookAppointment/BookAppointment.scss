@@ -1,12 +1,12 @@
 .appointmentContainer{
     background-color: #1063cf;
     max-width: 90rem;
-    margin: auto;
     padding: 25px;
     color: white;
-    width: 80%;
-    margin-top: 10vw;
-    margin-bottom: 10vw;
+    width: 100%;
+    margin-top: 8vw;
+    margin-bottom: 8vw;
+
     h2{
         margin: 10px;
         padding: 10px;
@@ -33,23 +33,25 @@
         font-weight: 500;
     }
     .btn{
-        margin: 10px;
-        padding: 10px; 
+        margin: 30px;
+        padding: 14px; 
         background-color: #1063cf;
         color: #ffffff;
         border: 3px solid white;
         margin-left: 20px;
-        font-size: large;
+        font-size: 1.5rem;
         font-weight: 700;
     }
     @media only screen and (max-width:768px){
         .input-boxes{
-            grid-template-columns: 80%;
+            grid-template-columns: 100%;
         }
     }
     @media only screen and (max-width:576px){
         .appointmentContainer{
             width: 100vw;
+            margin: 0;
+            padding: 0;
         }
     }
 }

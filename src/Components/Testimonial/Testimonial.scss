@@ -8,6 +8,7 @@
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     top: 0;
     left: 0;
   }
@@ -15,7 +16,7 @@
     color: white;
   }
   .bgcolor-blue {
-    background-color: rgba(36, 62, 255, 0.8);
+    background-color: rgba(36, 62, 255, 0.6);
     // border :2px red solid;
     margin: 0;
     padding: 10px;
