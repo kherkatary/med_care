@@ -1,0 +1,99 @@
+.ContentContainer {
+    height: 65vh;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 3rem;
+    overflow: hidden;
+
+    .Medicacontent {
+
+        background-color: white;
+        // padding: 2rem 4rem;
+
+        h1 {
+            span {
+                color: white;
+                background-color: blue;
+                padding: 0 0.4rem;
+
+            }
+        }
+
+        .ContentPara {
+            margin: 2rem 1rem 0 0rem;
+        }
+
+        ul {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            margin: 2rem 0rem 2rem 1rem;
+
+            li {
+                list-style: inherit;
+                color: blue;
+
+                span {
+                    color: black;
+                }
+            }
+        }
+
+        .Readbtn {
+            background-color: rgb(18, 76, 237);
+            color: aliceblue;
+            height: 2rem;
+            width: 6rem;
+            cursor: pointer;
+        }
+    }
+
+    .DocImg {
+        background-image: url("/public/download.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+}
+
+@media screen and (max-width: 993px) {
+    .ContentContainer {
+        display: block;
+        height: 100%;
+        align-content: center;
+        padding: 1rem;
+
+        .Medicacontent {
+            width: 100%;
+            padding: 0;
+
+            ul {
+
+                margin: 1rem ;
+                justify-content: center;
+            }
+        }
+
+        .DocImg {
+            display: none;
+            transition: 0.5s ease-in;
+        }
+
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ContentContainer {
+        .Medicacontent {
+            padding: 1rem ;
+
+            ul {
+                display: block;
+            }
+        }
+
+
+
+    }
+}
