@@ -12,7 +12,7 @@ const Navbar = () => {
    return (
       <>
       <header>   
-         <Logo />
+         <Link to="/"><Logo /></Link>
 
          <nav className="nav-links">
             <ul className="max-width-links">
