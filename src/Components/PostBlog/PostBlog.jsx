@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import './PostBlog.scss'
-// import Heading from '../../Components/Heading/Heading'
 import 'quill/dist/quill.snow.css'
 import ReactQuill from 'react-quill'
 
@@ -63,7 +62,6 @@ const PostBlog = () => {
 
    return (
       <div className='postblog'>
-         {/* <Heading name="" first_name="Write Blog" second_name="" /> */}
          <h1 style={{textAlign: 'center', padding:'1.2rem 0 0 0'}}>Write Blog</h1>
          <div className="posts">
             <form>
