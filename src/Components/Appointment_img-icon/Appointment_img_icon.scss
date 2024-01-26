@@ -1,0 +1,39 @@
+.appointment_img{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    justify-content: center;
+    padding: 0 5% 0 5%;
+    
+}
+.doctor_img{
+    margin: auto;
+    margin-top: 8vw;
+    margin-bottom: 8vw;
+    align-self: center;
+    padding: 5px;
+}
+@media only screen and (max-width:1200px) {
+    .appointment_img{
+        grid-template-columns:48% 48%;
+        img{
+            width: 100%;
+        }
+    }
+}
+@media only screen and (max-width:992px) {
+    .appointment_img{
+        grid-template-columns:80%;
+    }
+    .doctor_img{
+        margin: auto;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+    }
+}
+@media only screen and (max-width:543px){
+    .appointment_img{
+        padding: 0;
+        grid-template-columns: 90%;
+    }
+}

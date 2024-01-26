@@ -1,0 +1,25 @@
+.Emer {
+    height: 100%;
+    background-color: rgb(35, 185, 244);
+    padding: 2rem 2rem;
+    color: whitesmoke;
+
+    h3 {
+        color: black;
+    }
+
+    .EmerPara {
+        padding: 1rem 0rem;
+    }
+
+    .readMorebtn {
+        color: whitesmoke;
+        padding: 0.2rem 0.3rem;
+        cursor: pointer;
+    }
+
+    #ReadEmer {
+        background-color: rgb(35, 185, 244);
+        border: 0.1rem solid white;
+    }
+}

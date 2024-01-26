@@ -1,0 +1,58 @@
+.appointmentContainer{
+    background-color: #1063cf;
+    max-width: 90rem;
+    padding: 25px;
+    color: white;
+    width: 100%;
+    margin-top: 8vw;
+    margin-bottom: 8vw;
+
+    h2{
+        margin: 10px;
+        padding: 10px;
+        font-size: xx-large;
+    }
+    .input-boxes{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        margin: 10px;
+        padding: 10px;
+        row-gap: 30px;
+        column-gap: 40px;
+    }
+    .user-input {
+        background-color: #2f88fd;
+        padding: 1rem 0.5rem;
+        height: 50px;
+    }
+    ::placeholder{
+        color: white;
+    }
+    input, select, textarea{
+        color: #ffffff;
+        font-weight: 500;
+    }
+    .btn{
+        margin: 30px;
+        padding: 14px; 
+        background-color: #1063cf;
+        color: #ffffff;
+        border: 3px solid white;
+        margin-left: 20px;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    @media only screen and (max-width:768px){
+        .input-boxes{
+            grid-template-columns: 100%;
+        }
+    }
+    @media only screen and (max-width:576px){
+        .appointmentContainer{
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
