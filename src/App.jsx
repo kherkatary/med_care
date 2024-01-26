@@ -1,7 +1,9 @@
 
 import { Footer, Navbar } from './Components'
-import { About, ErrorPage, Home, Login, News, Contact, Teams, Register} from './Pages/index'
+import "react-toastify/dist/ReactToastify.css";
+import { About, ErrorPage, Home, Login, News, Contact, Teams, Register, AdminDashbaord, UserDashboard} from './Pages/index'
 import { Routes, Route} from 'react-router-dom'
+import { ToastContainer } from 'react-toastify';
 
 
 function App() {
@@ -10,6 +12,7 @@ function App() {
     <>
       <Navbar />
       <Routes>
+
         
           <Route exact path='/' element={<Home />} />
           <Route path='/about' element={<About/>}/>
@@ -20,6 +23,8 @@ function App() {
           <Route exact path='/news' element={<News />} />
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/register' element={<Register/>}/>
+          <Route path='/admin/dashboard' element={<AdminDashbaord/>}/>
+          <Route path='/user/dashboard' element={<UserDashboard/>}/>
         
         <Route path='*' element={<ErrorPage/>}/>
         <Route path='/teams' element={<Teams/>}/>

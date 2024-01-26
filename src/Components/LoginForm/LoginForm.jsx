@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Icon } from '@iconify/react'
 import './LoginForm.scss'
 import { Link } from 'react-router-dom';
+import { toast } from "react-toastify";
 const LoginForm = ({ type }) => {
     const route= type;
     useEffect(() => {
@@ -14,6 +15,7 @@ const LoginForm = ({ type }) => {
     const [pass, setPass] = useState("")
     const [phone, setPhone] = useState("")
     const [regis, setRegis] = useState("none");
+    const [msg, setMsg] = useState();
 
     const checkType = () => {
         if (type === "Register") { setRegis("block") }
@@ -21,7 +23,7 @@ const LoginForm = ({ type }) => {
 
     const submit = async () => {
         try {
-            const res = await fetch(`https://medicare-api-df85.onrender.com/api/v1/auth/${route.toLowerCase()}`, {
+            const res = await fetch(`http://localhost:8080/api/v1/auth/${route.toLowerCase()}`, {
                 method: 'POST',
                 body: JSON.stringify({
                     name: name,
@@ -34,7 +36,10 @@ const LoginForm = ({ type }) => {
 
             });
             const result = await res.json()
+            if(result?.success) toast.success(result?.message);
+            else toast.error(result?.message)
             console.log(result);
+            setMsg(result?.message);
 
         } catch (err) { console.log(`Login Error: ${err}`) }
 
@@ -43,7 +48,7 @@ const LoginForm = ({ type }) => {
 
     return (
         <div className='loginForm'>
-            <h1 className='formHeading'>{type}</h1>
+            <h1 className='formHeading'>{type} login:Status: {msg}</h1>
             <div className='formInput'>
 
                 <div className="inputBox centerElement" style={{ display: regis }}>

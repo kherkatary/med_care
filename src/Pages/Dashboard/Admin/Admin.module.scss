@@ -1,0 +1,11 @@
+.container{
+    height: fit-content;
+    min-height: 80vh;
+    padding: 1rem;
+
+    .item_container{
+        border: 2px solid rgb(238, 238, 238);
+        border-radius: 0.4rem;
+        padding: 3%;
+    }
+}

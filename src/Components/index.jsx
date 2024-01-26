@@ -10,5 +10,26 @@ import Cards from "./Team/Cards/Cards";
 import TeamCardHolder from "./Team/TeamCardHolder/TeamCardHolder";
 import ScrollToTop from "./ScrollToTop/ScrollToTop";
 import LoginForm from "./LoginForm/LoginForm";
+import Booking from "./DashboardItems/Bookings/Booking";
+import Courses from "./DashboardItems/Courses/Courses";
+import Blogs from "./DashboardItems/Blogs/Blogs";
+import Profile from "./DashboardItems/Profile/Profile";
 
-export {Navbar, Footer, Button, NewsPreview, ContactUsFooter, TileDesc, Quote, AboutInfo, Cards, TeamCardHolder, ScrollToTop, LoginForm}
+export {
+    Navbar,
+    Footer,
+    Button,
+    NewsPreview,
+    ContactUsFooter,
+    TileDesc,
+    Quote,
+    AboutInfo,
+    Cards,
+    TeamCardHolder, ScrollToTop,
+    LoginForm,
+    Booking,
+    Blogs,
+    Courses,
+    Profile
+    
+}
