@@ -7,8 +7,7 @@ import Logo from '../Logo/Logo'
 
 const Navbar = () => {
     const [visible, setVisible] = useState(false);
-
-    
+   
    return (
       <>
       <header>   
@@ -28,9 +27,9 @@ const Navbar = () => {
          <button className="navbar-button" onClick={()=>setVisible(!visible)}><IoMenu /> Menu</button>
       </header>
 
-      <div className="show-nav-links">
          {
-            visible &&  <div className="div-links">
+            visible && <div className="show-nav-links" onClick={()=>setVisible(false)}>
+            <div className="div-links">
             
                <ul className="min-width-links">
                <li><Link to="/" className="home-menu">Home</Link></li>
@@ -42,8 +41,8 @@ const Navbar = () => {
 
                </ul>
             </div> 
-         }
          </div>
+         }
 
         
       </>

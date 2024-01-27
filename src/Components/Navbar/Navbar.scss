@@ -94,6 +94,12 @@ header{
   .max-width-links {
     display: none;
   }
+  .show-nav-links{
+    box-sizing: border-box;
+    width: 99vw;
+    min-height: 120vh;
+    overflow-y: hidden ;
+  }
   
   .navbar-button, .show-nav-links{
   display: block;

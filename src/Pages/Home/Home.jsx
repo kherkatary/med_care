@@ -6,7 +6,6 @@ import Carousel from '../../Components/Carousel/Carousel'
 import IntroToAdd from '../../Components/IntroToAdd/IntroToAdd'
 import MedicaIntro from '../../Components/MedicaIntro/MedicaIntro'
 import Contentinfo from '../../Components/Contentinfo/Contentinfo'
-import PostBlog from '../../Components/PostBlog/PostBlog'
 
 
 
@@ -16,9 +15,9 @@ const Home = () => {
       <Carousel />
       <IntroToAdd />
       <MedicaIntro />
-      <Contentinfo />     <Testimonial/>
+      <Contentinfo />    
+       <Testimonial/>
      <Appointment_img_icon/>
-     <PostBlog/>
 
     </div>
   )
