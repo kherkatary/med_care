@@ -1,9 +1,11 @@
-*{
-   margin: 0;
-   box-sizing: border-box;
+// *{
+//    margin: 0;
+//    box-sizing: border-box;
+// }
+.cover{
+   background-color: #4d4dff;
 }
 .carousel-container{
-   background:#ffffff;
    display:flex;
    position: relative;
    overflow: hidden;
@@ -26,28 +28,25 @@
       
       position: absolute;
       color: rgb(0, 0, 0);
-      text-shadow: rgba(250,250,250,0.9) 0px 0px 51px;
       z-index: 1;
-      height: 650px;
+      height: 40.625rem;
       justify-content: center;
       transform: cubic-bezier(0.075, 0.82, 0.165, 1);
-      // background-color: rgb(117, 117, 117);
       background-color: transparent;
-      padding: 200px 0 0 7%;
+      padding: 18rem 0 0 7%;
       
       .description{
          font-weight: bold;
 
          .heading-name{
-            font-size: 65px;
+            font-size: 3rem;
             line-height: 1.2;
             letter-spacing: 4px;
             overflow:inherit;
       
          }
          .Heading-Description{
-            font-size: 25px;
-            // margin-top: 30px;
+            font-size: 1.2rem;
          }
       }
       
@@ -65,24 +64,25 @@
          display: flex;
       }
       .appointment{
-         width: 200px;
+         width: 12.6rem;
          background-color: transparent;
          color: white;
          border: 2px solid white;
          
       }
       .read-more{
-         width: 130px;
+         width: 8.19rem;
          background-color: #4d4dff;
          color: white;
       }
    }
 
    .carousel-item{
-      height: 650px;
+      height: 41rem;
       min-width: 100%;
       width: 100%;
-      display: flex;      
+      display: flex;   
+      background-color: #4d4dff;   
       justify-content: center;
       transition: 2s cubic-bezier(0.39, 0.575, 0.565, 1);
       
@@ -97,22 +97,22 @@
 
    @media screen and (max-width: 900px) {
       .carousel-item, .button-div{
-         height: 500px;
+         height: 31.25rem;
          transition: ease-in-out 1s;
       }  
       .button-div{
-         padding: 180px 0 0 7%;
+         padding: 11.34rem 0 0 7%;
          .description{
    
             .heading-name{
-               font-size: 50px;
+               font-size: 2.8rem;
                line-height: 1.1;
-               letter-spacing: 4px;
+               letter-spacing: 0.25rem;
          
             }
             .heading-description{
-               font-size: 25px;
-               margin-top: -40px;
+               font-size: 1.57rem;
+               margin-top: -2.5rem;
             }
          }
         }

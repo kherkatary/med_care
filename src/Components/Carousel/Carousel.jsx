@@ -27,32 +27,33 @@ const Carousel = () => {
 
    return (
       <div className='carousel-container'>
-         {data.map((item, index) => {
-            return (
-               <>
+            {data.map((item, index) => {
+               return (
+                  <>
 
-                  <div className='button-div'>
-                     <div className="description">
-                     <p className='heading-name'>We Provide top<br /> Medical Services </p>
-                     <p className='Heading-Description'>More than 30 professionals</p>
+                     <div className='button-div'>
+                        <div className="description">
+                           <p className='heading-name'>We Provide top<br /> Medical Services </p>
+                           <p className='Heading-Description'>More than 30 professionals</p>
+                        </div>
+                        <div className="all-button">
+                           <button className='appointment'>Make an Appointment</button>
+                           <button className='read-more'>Read More</button>
+                        </div>
+
                      </div>
-                     <div className="all-button">
-                        <button className='appointment'>Make an Appointment</button>
-                        <button className='read-more'>Read More</button>
+
+                     <div className='carousel-item'
+                        style={{ transform: `translate(-${currIdx * 100}%)` }}
+                        key={index}>
+                        {/* <h1>{item.name}</h1> */}
+                        <img key={item.id} src={item.src}></img>
                      </div>
 
-                  </div>
-
-                  <div className='carousel-item'
-                     style={{ transform: `translate(-${currIdx * 100}%)` }}
-                     key={index}>
-                     {/* <h1>{item.name}</h1> */}
-                     <img key={item.id} src={item.src}></img>
-                  </div>
-
-               </>)
-         })
+                  </>)
+            })
          }
+         
       </div>
    )
 }
