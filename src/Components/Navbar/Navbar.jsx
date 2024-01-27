@@ -8,20 +8,20 @@ import Logo from '../Logo/Logo'
 const Navbar = () => {
     const [visible, setVisible] = useState(false);
 
-
+    
    return (
       <>
       <header>   
-         <Logo />
+         <Link to="/"><Logo /></Link>
 
          <nav className="nav-links">
             <ul className="max-width-links">
-               <li><Link to="/" className="home-menu">HOME</Link></li>
-               <li><Link to="/about">ABOUT US</Link></li>
-               <li><Link to="/services">SERVICES</Link></li>
-               <li> <Link to="/news">NEWS</Link></li>
-               <li><Link to="/contact">CONTACT</Link></li>
-               <li><Link to="/login">LOG IN</Link></li>
+               <li><Link to="/" className="home-menu">Home</Link></li>
+               <li><Link to="/about">About Us</Link></li>
+               <li><Link to="/services">Services</Link></li>
+               <li> <Link to="/news">Blogs</Link></li>
+               <li><Link to="/contact">Contact</Link></li>
+               <li><Link to="/login">Log In</Link></li>
 
             </ul>
          </nav>
@@ -33,12 +33,12 @@ const Navbar = () => {
             visible &&  <div className="div-links">
             
                <ul className="min-width-links">
-               <li><Link to="/" className="home-menu">HOME</Link></li>
-               <li><Link to="/about">ABOUT US</Link></li>
-               <li><Link to="/#">SERVICES</Link></li>
-               <li> <Link to="/news">NEWS</Link></li>
-               <li><Link to="/contact">CONTACT</Link></li>
-               <li><Link to="/login">LOG IN</Link></li>
+               <li><Link to="/" className="home-menu">Home</Link></li>
+               <li><Link to="/about">About Us</Link></li>
+               <li><Link to="/services">Services</Link></li>
+               <li> <Link to="/news">Blogs</Link></li>
+               <li><Link to="/contact">Contact</Link></li>
+               <li><Link to="/login">Log In</Link></li>
 
                </ul>
             </div> 
