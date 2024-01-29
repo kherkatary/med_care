@@ -13,9 +13,11 @@ const  NewsDesc=(props)=> {
             <div className="date"><p className='p-date'>{props.date}</p></div>
           </div>
           <div className="content-tile">
+            <div className="news_wrapper">
             <p className='p-heading'>{props.heading}</p>
             <p className='p-author'>Author:<span id='blue-color'>{props.author} </span>| in <span id='blue-color'> {props.speciality}</span> | {props.comments} Comments</p>
-            <div className="div-details"><p className='p-details'>{props.details}</p></div>
+            <div dangerouslySetInnerHTML={{ __html: props.description }}></div>
+            </div>
             <Link><p className='read-more'><span id='blue-color'>Read More</span></p></Link>
           </div>
         </div>

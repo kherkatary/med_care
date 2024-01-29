@@ -10,8 +10,8 @@
 
   a{
     user-select: none; 
-    margin: 0 2rem 0 0;
     text-decoration: none;
+    margin: 0 2rem 0 0;
     color: black;
   }
     .home-menu{
@@ -93,6 +93,12 @@ header{
 @media screen and (max-width: 900px) {
   .max-width-links {
     display: none;
+  }
+  .show-nav-links{
+    box-sizing: border-box;
+    width: 99vw;
+    min-height: 120vh;
+    overflow-y: hidden ;
   }
   
   .navbar-button, .show-nav-links{

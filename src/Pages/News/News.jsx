@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react'
+import axios from 'axios'
 import './News.scss'
 import { Link } from 'react-router-dom'
 import data from "../../assets/data.json"
@@ -11,6 +12,21 @@ import Appointment from '../../Components/Appointment/Appointment'
 
 
 const News = () => {
+  const [posts, setPosts] = useState([])
+
+  useEffect(() => {
+    getAllData();
+  }, [])
+
+  const getAllData = () => {
+    axios.get("http://localhost:3000/blogs") // add api link to fetch news data
+      .then(res => {
+        setPosts(res.data)
+      })
+      .catch(err => {
+        console.log(err)
+      })
+  }
 
   return (
     <div className='news'>
@@ -21,10 +37,13 @@ const News = () => {
          
 
 
-        {NewsData?.map(newsdata => (
-            <NewsDesc key={newsdata.id} heading={newsdata.title} date={newsdata.date}
+        {posts?.map(newsdata => (
+          <div key={newsdata.id}> 
+            <NewsDesc heading={newsdata.title} date={newsdata.date}
              author={newsdata.author} speciality={newsdata.speciality} comments={newsdata.comments}
-             details={newsdata.description} src={newsdata.urlToImage}/>
+             description = {newsdata.html}
+             src={newsdata.urlToImage}/>
+             </div>
 
           ))}
 
@@ -40,9 +59,6 @@ const News = () => {
 
           <div className="for-emergencies">
             <Emergency/>
-            {/* <h3>For Emergencies</h3>
-            <h2><span>+0080 954 4557 884</span></h2>
-            <h4>Ambulance bulao jaldi jaldi...</h4> */}
           </div>
           <div className="for-categories">
             <h2>Categories</h2>
@@ -63,14 +79,6 @@ const News = () => {
           </div>
           <div className="book-an-appointment">
             <Appointment/>
-            {/* <h2>Book an Appointment</h2>
-            <form> 
-              <input className='input-form' type="text" placeholder='Name'/>
-              <input className='input-form' type="text" placeholder='Phone' name="name" />
-              <input className='input-form' type="text" placeholder='E-mail' name="name" />
-              <button className='appointment'>Make an Appointment</button>
-              
-            </form> */}
           </div>
 
         </div>
