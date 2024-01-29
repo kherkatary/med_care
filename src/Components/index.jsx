@@ -21,14 +21,16 @@ import Blogs from "./DashboardItems/Blogs/Blogs";
 import Profile from "./DashboardItems/Profile/Profile";
 import Testimonial from "./Testimonial/Testimonial"
 // import BookAppointment from "./BookAppointment/BookAppointment";
-import Appointment_img_icon from "./Appointment_img-icon/Appointment_img_icon";
+import AppointmentImgIcon from "./Appointment_img-icon/Appointment_img_icon";
+import UserBookings from "./DashboardItems/UserBookings/UserBookings";
 
 export { 
     Navbar,
     Footer,
     Button,Testimonial,
     NewsPreview,
-    ContactUsFooter,Appointment_img_icon,
+    ContactUsFooter,
+    AppointmentImgIcon,
     TileDesc,
     Quote,
     AboutInfo,
@@ -38,6 +40,8 @@ export {
     Booking,
     Blogs,
     Courses,
-    Profile
+    Profile,
+    UserBookings
+    
     
 }

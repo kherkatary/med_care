@@ -1,11 +1,12 @@
 import React from 'react'
 import "./Home.scss"
 import { Link } from 'react-router-dom'
-import { Button ,Navbar,Testimonial, Appointment_img_icon} from '../../Components'
+import { Button, Navbar, Testimonial, AppointmentImgIcon } from '../../Components'
 import Carousel from '../../Components/Carousel/Carousel'
 import IntroToAdd from '../../Components/IntroToAdd/IntroToAdd'
 import MedicaIntro from '../../Components/MedicaIntro/MedicaIntro'
 import Contentinfo from '../../Components/Contentinfo/Contentinfo'
+import Extra from '../Extra'
 
 
 
@@ -15,8 +16,10 @@ const Home = () => {
       <Carousel />
       <IntroToAdd />
       <MedicaIntro />
-      <Contentinfo />     <Testimonial/>
-     <Appointment_img_icon/>
+      <Extra/>
+      <Contentinfo />
+      <Testimonial />
+      <AppointmentImgIcon />
 
     </div>
   )

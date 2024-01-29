@@ -48,7 +48,7 @@ const LoginForm = ({ type }) => {
 
     return (
         <div className='loginForm'>
-            <h1 className='formHeading'>{type} login:Status: {msg}</h1>
+            <h1 className='formHeading'>{type}</h1>
             <div className='formInput'>
 
                 <div className="inputBox centerElement" style={{ display: regis }}>

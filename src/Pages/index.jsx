@@ -12,5 +12,10 @@ import UserDashboard from "./Dashboard/User/User";
 
 
 
-export {Home, Login, News, Contact, About, ErrorPage, Teams, Register ,Service, AdminDashbaord,UserDashboard}
+export {
+    Home, Login, News, Contact, About, ErrorPage, Teams, Register,
+    Service,
+    AdminDashbaord,
+    UserDashboard
+}
 
