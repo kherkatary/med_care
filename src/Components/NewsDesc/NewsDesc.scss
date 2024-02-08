@@ -16,6 +16,7 @@
          position: relative;
          top: 30px;
          height: 35px;
+         padding-top: 4px;
          width: 130px;
          z-index: 2px;
          color: white;
@@ -33,11 +34,17 @@
       overflow: hidden;
       transition: 0.5s ease-in;
       padding: 10px 20px 10px 20px;
-      height: 270px;
+      height: 280px;
       width: 85%;
       background-color: rgb(239, 253, 239);
       margin-left: auto;
       padding-bottom: 10px;
+
+      .news_wrapper{
+         height: 240px;
+      }
+
+      
 
       #blue-color{
          color: blue;
