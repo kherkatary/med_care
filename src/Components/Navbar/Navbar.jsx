@@ -11,7 +11,7 @@ const Navbar = () => {
 
    return (
       <>
-      <header>   
+      <header>
          <Logo />
 
          <nav className="nav-links">
@@ -41,11 +41,10 @@ const Navbar = () => {
                <li><Link to="/login">LOG IN</Link></li>
 
                </ul>
-            </div> 
+            </div>
          }
          </div>
 
-        
       </>
    )
 }
