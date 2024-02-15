@@ -1,4 +1,17 @@
-.ContentContainer {
+ ul {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            margin: 2rem 0rem 2rem 1rem;
+
+            li {
+                list-style: inherit;
+                color: blue;
+
+                span {
+                    color: black;
+                }
+            }
+        }.ContentContainer {
     height: 65vh;
     background-color: white;
     display: grid;
@@ -24,20 +37,7 @@
             margin: 2rem 1rem 0 0rem;
         }
 
-        ul {
-            display: grid;
-            grid-template-columns: 50% 50%;
-            margin: 2rem 0rem 2rem 1rem;
-
-            li {
-                list-style: inherit;
-                color: blue;
-
-                span {
-                    color: black;
-                }
-            }
-        }
+       
 
         .Readbtn {
             background-color: rgb(18, 76, 237);

@@ -38,6 +38,21 @@
             border: 1px solid rgba(128, 128, 128);
 
         }
+        ul {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            li {
+                list-style: inherit;
+                color: rgb(46, 46, 62);
+
+                span {
+                    font-size: 14px;
+                    padding:0  0.8rem 0 0;
+
+                    color: black;
+                }
+            }
+        }
 
         .ServImg {
             height: 40%;
@@ -45,7 +60,7 @@
         }
 
         .servicePara {
-            padding: 1rem 0;
+            padding: 0.5rem 0;
         }
 
         .readMorebtn {
